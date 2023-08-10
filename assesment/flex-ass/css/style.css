@@ -1,0 +1,189 @@
+*
+{
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dream
+{
+    display: flex;
+    background: url(../image/software-developer-6521720_1280\ \(1\).jpg);
+    background-size: cover;
+}
+.about
+{
+    padding: 25px 70px;
+    background: rgba(83, 81, 81, .5);
+    color: white;   
+}
+.pulse
+{
+    border: 2px solid white;
+    font-size: 30px;
+
+    text-align: center;
+    width: 130px;
+}
+ul
+{
+    margin-top: 70px;
+    list-style: none;
+    line-height: 30px;
+    text-align: center;
+}
+.icon
+{
+    margin-top: 50px;
+    text-align: center;
+    word-spacing: 10px;
+ 
+}
+.work
+{
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+
+}
+.intro
+{
+    /* border: 1px solid white; */
+    padding: 20px;
+    width: 300px;
+    height: 230px;
+    /* margin-right: 0px; */
+    background: rgba(83, 81, 81, .5);   
+}
+.intro h5
+{
+    color: aqua;
+    font-size: 16px;
+}
+.intro p
+{
+    margin-top:15px ;
+    line-height: 22px;
+}
+.profile
+{
+    display: flex;
+}
+.blank
+{
+    width: 600px;
+    background: #1a1717;
+}
+.company
+{
+    padding: 50px;
+}
+.aboutus
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;  
+    gap: 50px;
+}
+.au
+{
+    width: 370px;
+}
+.au .icon1, .icon2
+{
+    font-size: 60px;
+    margin-top: 15px;
+}
+h3
+{
+    color: rgb(2, 150, 150);
+    margin-top: 15px;
+}
+.au p
+{
+    margin-top: 15px;
+}
+.ourwork
+{
+    border: 2px solid black;
+    padding: 40px;
+}
+.img
+{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 30px;
+
+}
+.image
+{
+    height: 220px;
+    width: 180px;
+}
+.ourclient
+{
+    padding: 50px 0;
+}
+.ourclient p
+{
+    margin-top: 25px;
+}
+.flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+}
+.child
+{
+    /* border: 1px solid black; */
+    height: 90px;
+    width: 200px;
+}
+.cart
+{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 70px;
+}
+
+.qw
+{
+    border: 1px solid black;
+    background-color: #a1a1a1;
+    width: 400px;
+    padding: 25px;
+}
+.qw p
+{
+    margin-top: 15px;
+    font-size: 19px;
+    line-height: 25px;
+}
+input, textarea
+{
+    width: 100%;
+    margin-top: 15px;
+}
+.submit
+{
+    display: inline-block;
+    width: 100px;
+    margin-left: 70%;
+}
+
+
+
+
+
+
+

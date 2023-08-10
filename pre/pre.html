@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            height: 100px;
+            width: 100px;
+            /* background: lightblue; */
+            display: block;
+            margin: 100px auto;
+            position: relative;
+            transform-style:preserve-3d ;
+            transition: 1s;
+        }
+        .front{
+            height: 100px;
+            width: 100px;
+            background: lightcoral;
+            position: absolute;
+            backface-visibility: hidden;
+            transform: rotateX(0deg)translateZ(70px);
+            /* transition: 1s; */
+            top: 0;
+            left: 0;
+
+        }
+        .back{
+            height: 100px;
+            width: 100px;
+            background: darkcyan;
+            position: absolute;
+            backface-visibility: hidden;
+            transform: rotateX(90deg)translateZ(70px);
+            /* transition: 1s; */
+            top: 0;
+            left: 0;
+
+            
+        }
+        a:hover{
+            transform: rotateX(-90deg)translateZ(0);
+        }
+    </style>
+</head>
+<body>
+    <a href="">
+        <div class="front"></div>
+        <div class="back"></div>
+    </a>
+</body>
+</html>

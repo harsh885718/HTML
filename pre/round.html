@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            height: 50px;
+            width: 50px;
+            background: red;
+            margin: 100px auto;
+            position: relative;
+            border-radius: 50%;
+            opacity: 1;
+            
+        }
+         .d1
+        {
+            height: 50px;
+            width: 50px;
+            background: red;
+            margin: 100px auto;
+            position: absolute;
+            top: -100px;
+            border-radius: 50%;
+            opacity: 0;
+            animation:harsh 1s linear infinite ;
+       
+        }
+        .d2
+        {
+            height: 50px;
+            width: 50px;
+            background: red;
+            margin: 100px auto;
+            position: absolute;
+            top: -100px;
+            border-radius: 50%;
+            opacity: 0;
+            animation:harsh 1.5s linear infinite ;
+          
+        }
+        @keyframes harsh
+        {
+            from{ opacity: 1; transform: scale(1);}
+            to{ opacity: 0; transform: scale(1.5);}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="d1"></div>
+        <div class="d2"></div>
+    </div>
+</body>
+</html>

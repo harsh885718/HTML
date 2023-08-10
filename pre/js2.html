@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <button  id="ds" onclick="h()">hello</button>
+    <script>
+            H = document.getElementById('ds')
+            H.style.color= "red"
+            function h()
+            {
+                if (H.innerHTML == "hello")
+                {
+                    H.innerHTML = "wekk"
+                    H.style.color= "blue"
+                }
+                else
+                {
+                    H.innerHTML = "hello"
+                    H.style.color= "red"
+                }
+            }
+    </script>
+</body>
+</html>

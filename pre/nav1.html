@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        .nav{
+            background: coral;
+            text-align: center;
+            padding: 25px 0;
+
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        .me{
+            display: inline;
+            padding-right:30px ;
+            /* border: 1px solid; */
+            position: relative;
+        }
+        li{
+            list-style: none;
+        }
+        .bn{
+
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: rgba(0 , 0, 0, 0.4);
+            width: 100px;
+            opacity: 0;
+        }
+        .bn{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: rgba(0 , 0, 0, 0.4);
+            width: 100px;
+            opacity: 0;
+            
+            }
+        .an{
+            position: absolute;
+            top:33px;
+            left: 80%;
+            background: rgba(0 , 0, 0, 0.4);
+            width: 100px;
+            opacity: 0;
+            transition: 1s;
+            
+        }    
+        .me:hover .bn{
+            opacity: 1;
+
+        }
+        .po:hover .an{
+            opacity: 1;
+            left: 100%;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="me"><a href="">about</a></li>
+            <li class="me"><a href="">services</a>
+            <ul class="bn">
+                <li><a href="">service1</a></li>
+                <li><a href="">service2</a></li>
+                <li class="po"><a href="">service3</a>
+                    <ul class="an">
+                        <li><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                    </ul></li>
+            </ul>
+        </li>
+            <li class="me"><a href="">contect</a></li>
+        </ul>
+    </div>
+</body>
+</html>

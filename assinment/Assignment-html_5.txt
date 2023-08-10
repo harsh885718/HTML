@@ -1,0 +1,9 @@
+1. <article>,<aside>,<audio>,<canvas>,<command>,<datalist>,<details>,<embed>,<finger>,<footer,<header>,<hgroup>,<keygen>,<mark>,<meter>,<nav>,<output>,<progress>,<ruby>,<section>,<time>,
+<video>,<wbr>
+
+2. The HTML5 <audio> and <video> tags make it simple to add media to a website. You need to set src attribute to identify the media source and include a controls attribute so the user can play and pause the media.
+
+3. Semantic HTML elements are those that clearly describe their meaning in a human- and machine-readable way. Semantic elements like <form>,<table>, and <article>.
+
+4. canvas : The <canvas> tag is used to draw graphics, on te fly, via scripting. The <canvas> tag is transparent, and is only a container for graphics, you must use a script to actually draw the graphics.
+   SVG : The <svg> tag defines a container for SVG graphics. SVG has several methods for drawing paths, boxes, circles, text, and graphic images.

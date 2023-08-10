@@ -1,0 +1,31 @@
+*
+{
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navebar
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  word-spacing: 35px;
+  font-size: 25px;
+  font-weight: bolder;
+  border: 1px solid black;
+}
+
+li
+{
+    display: inline;
+}
+.bars
+{
+    display: none;
+    cursor: pointer;
+}
+.bars:hover ul
+{
+    display: block;
+}

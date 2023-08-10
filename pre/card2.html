@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYle>
+        .m{
+            
+            text-align: center;
+            padding: 15px;
+            
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        li{
+            display: inline;
+            padding:15px;
+            margin: 50px;
+            /* border: 1px solid; */
+        }
+        .row{
+            background: lightblue;
+            display: flex;
+            flex-wrap:wrap ;
+            padding: 35px;
+            /* opacity: 0; */
+            justify-content: center;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .card{
+            width: 250px;
+            height: 450px;
+            border: 2px solid black;
+            position: relative;
+            margin:0 50px 50px 0;
+            background: white;
+        }
+         .main{
+            height: 300px;
+            padding: 10px 10px 0 10px;
+            transform: translateX(-10px);
+            position: relative;
+        }
+        .card .info{
+            height: 147px;
+          
+        }
+        .front,.back{
+            position: absolute;
+           
+        }
+        .front{
+            transform: rotateY(0deg);
+            backface-visibility: hidden;
+            transition: 1s;
+        }
+        .back{
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            transition: 1s;
+
+        }
+        .main:hover .front{
+            transform: rotateY(180deg);
+        }
+        .main:hover .back{
+            transform: rotateY(0deg);
+        }
+        .new{
+            height: 20px;
+            width: 40px;
+            display: inline;
+            background: lightcoral;
+            position: absolute;
+            text-align: center;
+            line-height: 20px;
+            z-index: 1;
+            top: 0;
+            right: -10px;
+        }
+        .view{
+            height: 40px;
+            width: 100%;
+            background: black;
+            position: absolute;
+            top: 0;
+            color: aliceblue;
+            text-align: center;
+            line-height: 40px;
+            transition: 1s;
+            opacity: 0;
+        }
+        .main:hover .view{
+            top: 80%;
+            opacity: 1;
+        }
+        .view:hover{
+            background: lightseagreen;
+        }
+        .name{
+            color: red;
+            /* transform: translate(30px); */
+            text-align: center;
+        }
+        span{
+            color: rgb(102, 103, 104);
+            text-decoration: line-through;
+        }
+        .pri{
+            word-spacing: 13px;
+            letter-spacing: 3px;
+            text-align: center;
+            margin-top: 10px;
+            color: black;
+        }
+        .add{
+            background: lightseagreen;
+            height: 45px;
+            width: 200px;
+            text-align: center;
+            line-height: 43px;
+            margin: 20px auto;
+            outline: 3px solid lightseagreen;
+            transition: 0.31s;
+            
+        }
+        .add:hover{
+            outline-offset: 6px;
+        }
+        .m{
+            background: lightcoral;
+        }
+        .men,.women{
+            display: inline;
+            
+        }
+        .p{
+           display: none;
+           position: absolute;
+           transition: 1s;
+        }
+        .men:hover .p{
+           display: block;
+           top:100px;
+           left: 0;
+        }
+        .ab{
+           display: none;
+           position: absolute;
+           transition: 1s;
+        }
+        .women:hover .ab{
+            display: block;
+           top:100px;
+           left: 0;
+        }
+
+
+    </STYle>
+</head>
+<body>
+    <div class="m">
+        <ul>
+            <li class="men">MEN
+               
+                <div class="p">
+                    <div class="row">
+                        <!-- card stert -->
+                    <div class="card">
+                        <div class="main">
+                            <div class="new"> new</div>
+                            <div class="img">
+                                <div class="front">
+                                  <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+                                </div>
+                                <div class="back">
+                                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/m2.jpg" alt="" height="100%" width="100%">
+                                </div>
+                            </div>
+                            <div class="view">QUIK VIEW</div>
+                        </div>
+                        <div class="info">
+                            <div class="name">Gabi Full Sleeve Sweatshirt</div>
+                            <div class="pri">$45.99 <span>$69.71</span></div>
+                            <div class="add">ADD TO CARD</div>
+                        </div>
+                    </div>
+                    <!-- card end -->
+                     <!-- card stert -->
+                     <div class="card">
+                        <div class="main">
+                            <div class="new"> new</div>
+                            <div class="img">
+                                <div class="front">
+                                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/m2.jpg" alt="" height="100%" width="100%">
+                                </div>
+                                <div class="back">
+                                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/m2.jpg" alt="" height="100%" width="100%">
+                                </div>
+                            </div>
+                            <div class="view">QUIK VIEW</div>
+                        </div>
+                        <div class="info">
+                            <div class="name">Gabi Full Sleeve Sweatshirt</div>
+                            <div class="pri">$45.99 <span>$69.71</span></div>
+                            <div class="add">ADD TO CARD</div>
+                        </div>
+                    </div>
+                    <!-- card end -->
+                     <!-- card stert -->
+                     <div class="card">
+                        <div class="main">
+                            <div class="new"> new</div>
+                            <div class="img">
+                                <div class="front">
+                                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/m2.jpg" alt="" height="100%" width="100%">
+                                </div>
+                                <div class="back">
+                                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/m2.jpg" alt="" height="100%" width="100%">
+                                </div>
+                            </div>
+                            <div class="view">QUIK VIEW</div>
+                        </div>
+                        <div class="info">
+                            <div class="name">Gabi Full Sleeve Sweatshirt</div>
+                            <div class="pri">$45.99 <span>$69.71</span></div>
+                            <div class="add">ADD TO CARD</div>
+                        </div>
+                    </div>
+                    <!-- card end -->
+                     <!-- card stert -->
+                     <div class="card">
+                        <div class="main">
+                            <div class="new"> new</div>
+                            <div class="img">
+                                <div class="front">
+                                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/m2.jpg" alt="" height="100%" width="100%">
+                                </div>
+                                <div class="back">
+                                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/m2.jpg" alt="" height="100%" width="100%">
+                                </div>
+                            </div>
+                            <div class="view">QUIK VIEW</div>
+                        </div>
+                        <div class="info">
+                            <div class="name">Gabi Full Sleeve Sweatshirt</div>
+                            <div class="pri">$45.99 <span>$69.71</span></div>
+                            <div class="add">ADD TO CARD</div>
+                        </div>
+                    </div>
+                    <!-- card end -->
+                    
+                
+                </div>
+                </div>
+            </li>
+            <li class="women">WOMEN
+                <div class="ab">
+                    <div class="row">
+                        <!-- card stert -->
+                    <div class="card">
+                        <div class="main">
+                            <div class="new"> new</div>
+                            <div class="img">
+                                <div class="front">
+                                  <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+                                </div>
+                                <div class="back">
+                                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/m2.jpg" alt="" height="100%" width="100%">
+                                </div>
+                            </div>
+                            <div class="view">QUIK VIEW</div>
+                        </div>
+                        <div class="info">
+                            <div class="name">Gabi Full Sleeve Sweatshirt</div>
+                            <div class="pri">$45.99 <span>$69.71</span></div>
+                            <div class="add">ADD TO CARD</div>
+                        </div>
+                    </div>
+                    <!-- card end -->
+                     <!-- card stert -->
+                     <div class="card">
+                        <div class="main">
+                            <div class="new"> new</div>
+                            <div class="img">
+                                <div class="front">
+                                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/m2.jpg" alt="" height="100%" width="100%">
+                                </div>
+                                <div class="back">
+                                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/m2.jpg" alt="" height="100%" width="100%">
+                                </div>
+                            </div>
+                            <div class="view">QUIK VIEW</div>
+                        </div>
+                        <div class="info">
+                            <div class="name">Gabi Full Sleeve Sweatshirt</div>
+                            <div class="pri">$45.99 <span>$69.71</span></div>
+                            <div class="add">ADD TO CARD</div>
+                        </div>
+                    </div>
+                    <!-- card end -->
+                     <!-- card stert -->
+                     <div class="card">
+                        <div class="main">
+                            <div class="new"> new</div>
+                            <div class="img">
+                                <div class="front">
+                                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/m2.jpg" alt="" height="100%" width="100%">
+                                </div>
+                                <div class="back">
+                                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/m2.jpg" alt="" height="100%" width="100%">
+                                </div>
+                            </div>
+                            <div class="view">QUIK VIEW</div>
+                        </div>
+                        <div class="info">
+                            <div class="name">Gabi Full Sleeve Sweatshirt</div>
+                            <div class="pri">$45.99 <span>$69.71</span></div>
+                            <div class="add">ADD TO CARD</div>
+                        </div>
+                    </div>
+                    <!-- card end -->
+                     <!-- card stert -->
+                     <div class="card">
+                        <div class="main">
+                            <div class="new"> new</div>
+                            <div class="img">
+                                <div class="front">
+                                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/m2.jpg" alt="" height="100%" width="100%">
+                                </div>
+                                <div class="back">
+                                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/m2.jpg" alt="" height="100%" width="100%">
+                                </div>
+                            </div>
+                            <div class="view">QUIK VIEW</div>
+                        </div>
+                        <div class="info">
+                            <div class="name">Gabi Full Sleeve Sweatshirt</div>
+                            <div class="pri">$45.99 <span>$69.71</span></div>
+                            <div class="add">ADD TO CARD</div>
+                        </div>
+                    </div>
+                    <!-- card end -->
+                    
+                
+                </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

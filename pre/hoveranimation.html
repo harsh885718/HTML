@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            height: 240px;
+            width: 240px;
+            background: transparent;
+            margin: 200px 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        .one
+        {
+            height: 200px;
+            width: 200px;
+            background: lightgreen;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            
+        }
+        .two
+        {
+            height: 200%;
+            width: 200%;
+            background:conic-gradient(red 0deg,red 90deg,lightcoral 90deg,lightcoral 180deg,blue 180deg,blue 270deg,lightblue 270deg,lightblue 360deg);
+            position: absolute;
+            z-index: -1;
+            top: -120px;
+            left: -120px;
+            transition: 1s;
+            
+        }
+        .main:hover .two
+        {
+            animation: harsh 1s linear infinite;
+        }
+        @keyframes harsh
+        {
+            to{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a
+        {
+            height: 80px;
+            width: 80px;
+            /* background: gray; */
+            display: block;
+            margin: 100px auto;
+            position: relative;
+            transition: 1s;
+            transform-style: preserve-3d;
+            animation: harsh 4s linear infinite;
+        }
+        .front 
+        {
+            height: 80px;
+            width: 80px;
+            background: lightblue;
+            position: absolute;
+            top:0;
+            left:0;
+            backface-visibility: hidden;
+            transform: rotateY(0deg) translateZ(40px);
+        }
+
+        .back 
+        {
+            height: 80px;
+            width: 80px;
+            background: lightcoral;
+            position: absolute;
+            top:0;
+            left:0;
+            backface-visibility: hidden;
+
+            transform: rotateY(90deg) translateZ(40px);
+        }
+        .d
+        {
+            height: 80px;
+            width: 80px;
+            background: blue;
+            position: absolute;
+            top:0;
+            left:0;
+            backface-visibility: hidden;
+
+            transform: rotateY(180deg) translateZ(40px);
+        }
+        .f
+        {
+            height: 80px;
+            width: 80px;
+            background: red;
+            position: absolute;
+            top:0;
+            left:0;
+            backface-visibility: hidden;
+
+            transform: rotateY(270deg) translateZ(30px);
+        }
+
+        @keyframes harsh
+        {
+            to{transform: rotateY(360deg) translateZ(0px);}
+        }
+    </style>
+</head>
+<body>
+
+    <a href="">
+        <div class="front">Front</div>
+        <div class="back">Back</div>
+        <div class="d"></div>
+        <div class="f"></div>
+    </a>
+    
+</body>
+</html>

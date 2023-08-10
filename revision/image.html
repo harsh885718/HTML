@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            /* border: 1px solid green; */
+            margin: 0;
+            padding: 0;
+
+        }
+        .main
+        {
+            padding: 25px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 50px;
+            
+        }
+        .child1
+        {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 250px;
+            gap: 50px;
+        }
+        .child2
+        {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 250px;
+            gap: 50px;
+        }
+        .x
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0 50px;
+        }
+        .ing
+        {
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCeVhPcF0B061dWx6Y2p6ZshztnAoVQI59g&usqp=CAU);
+            background-size: cover;
+        }
+        .sam
+        {
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxXnC3fwMwkbIt3ejGRIw3NmbDyUtgS5g2jA&usqp=CAU);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+       <div class="child1 ">
+        <div class="ing"></div>
+        <div class=" x">
+            <div class="sam"></div>
+            <div class="sam"></div>
+            <div class="sam"></div>
+        </div>
+       </div>
+       <div class="child2 ">
+        <div class=" x">
+            <div class="sam"></div>
+            <div class="sam"></div>
+            <div class="sam"></div>
+        </div>
+        <div class="ing"></div>
+       </div>
+       <div class="child1 ">
+        <div class="ing"></div>
+        <div class=" x">
+            <div class="sam"></div>
+            <div class="sam"></div>
+            <div class="sam"></div>
+        </div>
+       </div>
+        </div>
+       
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=.main, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        .main
+        {
+            height: 200px;
+            width: 200px;
+            /* background: lightblue; */
+            margin: 100px auto;
+            padding: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .one
+        {
+            height: 180px;
+            width: 180px;
+            background: black;
+        }
+        .two
+        {
+            position: absolute;
+            height: 200%;
+            width: 200%;
+            background: conic-gradient(red 0%,red 25%,white 25%,white 50%,blue 50%,blue 75%,white 75%,white 100%);
+            position: absolute;
+            z-index: -1;
+            top: -100px;
+            left: -100px;
+            animation: harsh 2s linear infinite;
+        }
+        @keyframes harsh
+        {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+</body>
+</html>

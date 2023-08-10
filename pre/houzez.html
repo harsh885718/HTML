@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            background: url(img/205-1024x683.jpg);
+            background-attachment: fixed;
+        }
+        .main
+        {
+            height: 1200px;
+            /* border: 1px solid black; */
+            background: white;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            font-family: "Roboto",sans-serif;
+        }
+        .new
+        {
+            /* border: 1px solid black; */
+            width: 70%;
+            height: 900px;
+            width: 1000px;
+            display: grid;
+            gap: 30px;
+            grid-template-columns: 1fr 1fr 1fr;
+           
+       
+
+        }
+        .fr
+        {
+            /* border: 1px solid black; */
+            height: 580px;
+            border-radius: 7px;
+            display: grid;
+            gap: 30px;
+            /* background: transparent; */
+            overflow: hidden;
+
+        }
+        .f
+        {
+            /* border: 1px solid black; */
+            background: url(img/023-1024x768.jpg);
+            background-position:-300px;
+    
+        }
+        .r1
+        {
+            /* border: 1px solid black; */
+            height:270px;
+            width: 100%;
+            border-radius: 7px;
+            font-weight: 100;
+        }
+        .wer
+        {
+            /* border: 1px solid black; */
+            height: 300px;
+        }
+        .sec
+        {
+            /* border: 1px solid black ; */
+            height: 1300px;
+            width: 100%;
+            display: grid;
+            gap: 30px;
+            place-items: center;
+            background-color: #00335A;
+            opacity: 0.85;
+        }
+        .many
+        {
+            border: 1px solid black;
+            height: 80%;
+            width: 95%;            
+            display: flex;
+            align-items: center;
+        }
+        .left
+        {
+            height: 50%;
+            width: 60%;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .right
+        {
+            height: 100%;
+            width: 40%;
+            border: 1px solid black;
+            background : white;
+        }
+        .wer
+        {
+            border-radius: 7px;
+        }
+        .ht
+        {
+            border: 1px solid black ;
+            height: 100%;
+            width: 50%;
+            
+        }
+        .m1
+        {
+            display: grid;
+            align-items: center;
+            line-height: 30px;
+            color: rgb(94, 90, 90);
+            
+        }
+        .m2
+        {
+            background: url(img/205-1024x683.jpg);
+            background-size: 155% 100%;
+            background-position: -90px 0px;
+        }
+        .m3
+        {
+            background: url(img/026-1024x768.jpg);
+            background-size: 120% 100%;
+            background-position: -20px 0px;
+        }
+        .m4
+        {
+            background: url(img/020-1024x768.jpg);
+            background-size: 130% 100%;
+            background-position: -50px 0px ;
+        }
+        .r2
+        {
+            background: url(img/206-1024x683.jpg);
+            background-size: 150% 100%;
+            background-position: -75px 0px ;
+        }
+        .r3
+        {
+            background: url(img/203-1024x683.jpg);
+            background-size: 150% 100%;
+            background-position: -75px 0px ;
+        }
+        .x
+        {
+            height: initial;
+            width: initial;
+            background: rgba(49, 47, 47, 0.3);
+            transition: 0.1s;
+        }
+        .x:hover
+        {
+            background: transparent;
+        }
+
+        h1
+        {
+            font-weight: 100;
+            line-height: 70px;
+            color: black;
+        }
+        .f1
+        {
+            border: 1px solid black;
+            height: 45%;
+        }
+        .f2
+        {
+            border: 1px solid black;
+            height: 55%;
+        }
+        .f3
+        {
+            border: 1px solid black;
+            height: 50%;
+        }
+        /* .m2 .x
+        {
+            height: initial;
+            width: initial;
+            background: rgba(49, 47, 47, 0.3);
+        } */
+    </style>
+</head>
+<body>
+<div class="main">
+<div class="new">
+    <div class="fr">
+        <div class="r1 m1">
+            <div class="b">
+            <h1> Residential</h1>
+             Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed do<br> eiusmod tempor incidi dunt
+            </div>
+        </div>
+        <div class="r1 m2">
+            <div class="x"></div>
+        </div>
+
+    </div>
+    <div class="fr f">
+        <div class="x"></div>
+    </div>
+    <div class="fr">
+        <div class="r1 m3">
+            <div class="x"></div>
+        </div>
+        <div class="r1 m4">
+            <div class="x"></div>
+
+        </div>
+    </div>
+    <div class="wer m1">
+        <div class="b">
+       <h1> Residential</h1>
+Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed do<br> eiusmod tempor incidi dunt
+</div>
+
+    </div>
+    <div class="wer r2"></div>
+    <div class="wer r3"></div>
+
+</div>
+</div>
+<div class="sec">
+    <div class="many">
+        <div class="left">
+            <div class="ht">
+                <div class="f1"></div>
+                <div class="f2"></div>
+            </div>
+            <div class="ht">
+                <div class="f3"></div>
+                <div class="f3"></div>
+            </div>     
+
+        </div>
+        <div class="right"></div>
+    </div>
+
+</div>
+</body>
+</html>

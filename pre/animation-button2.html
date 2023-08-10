@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        .main
+        {
+            height: 50px;
+            width: 50px;
+            background: wheat;
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size:15px;
+            transition: .5s;
+            position: relative;
+        }
+        .f1
+        {
+            height: 70px;
+            width: 70px;
+            background: wheat;
+            border-radius: 50%;
+            position: absolute;
+            z-index: -1;
+            animation: harsh 1s linear infinite ;
+        }
+        .f2
+        {
+            height: 90px;
+            width: 90px;
+            background: wheat;
+            border-radius: 50%;
+            position: absolute;
+            z-index: -1;
+            animation: harsh 1s linear infinite ;
+        }
+        .main:hover
+        {
+            background: blue;
+            color: white;
+        }
+        @keyframes harsh
+        {
+            0%{transform: scale(0); opacity: 1;}
+            100%{transform: scale(1.4); opacity: 0;}
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main"><i class="fa-solid fa-play"></i>
+    <div class="f1"></div>
+    <div class="f2"></div>
+</div>
+</body>
+</html>

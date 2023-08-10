@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .sub
+        {
+            width: 100%;
+            /* background: lightblue; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: space-between;
+            line-height:85px ;
+        }
+        .sub1, .sub2 , .sub3
+        {
+            /* border: 1px solid black; */
+        }
+
+        .menu
+        {
+            display: none;
+            font-size: 25px;
+            text-align: center;
+        }
+        .icon
+        {
+            display: none;
+            font-size: 25px;
+            text-align: center;
+
+        }
+        .sub1
+        {
+            padding-left: 20px;
+            
+        }
+        .sub1 a
+        {
+            font-size: 30px;
+            font-family:sans-serif;
+        }
+        .sub3
+        {
+            text-align: right;
+        }
+        .sub3 span
+        {
+            /* border: 1px solid black; */
+            margin-right: 25px;
+            padding:10px 20px;
+            font-size: 20px;
+            font-family:sans-serif;
+            box-shadow: 0 0 15px 1px;
+            font-size: 17px;
+            transition: .31s;
+        }
+        .sub3 span:hover
+        {
+            background: black;
+            color: white;
+            box-shadow: none;
+        }
+        ul
+        {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+        li
+        {
+            margin: 0 10px;
+            /* border: 1px solid red; */
+            position: relative;
+            display: inline;
+        }
+
+        li::after
+        {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            top: 120%;
+            right: 0%;
+            background: rgb(28, 21, 28);
+            transition: 1s;
+        }
+        a:hover li::after
+        {
+            left: 0;  
+            width: 100%;          
+        }
+        a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .slider
+        {
+            width: 100%;
+            height: 600px;
+            border: 1px solid black ;
+        }
+        .theme
+        {
+            /* border: 1px solid red; */
+            /* height:650px ; */
+            width: 100 ;
+        }
+        .wordp
+        {
+            /* border: 1px solid black; */
+            height: 200px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .xmany
+        {
+            /* border: 1px solid black; */
+            /* height: 400px; */
+            padding:20px 40px;
+
+        }
+        .wordp h2
+        {
+            font-size: 50px;
+            font-family: sans-serif ;
+            /* border: 1px solid black; */
+           width: 900px;
+            text-align: center;
+        
+        }
+        .xmany .many
+        {
+            /* border: 1px solid black; */
+            /* width: 95%; */
+            /* height: 80%; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 25px;
+        }
+        .many .xx
+        {
+            /* border: 1px solid black; */
+            height: 350px;
+            transition: .31s;
+           
+        }
+        .many .xx:hover
+        {
+            box-shadow: 0 0 25px 1px;
+        }
+        @media(max-width:1200px)
+        {
+            .sub1{text-align: center;}
+            .sub2{display: none;}
+            .menu{display: block;}
+            .sub3 span{display: none;}
+            .icon{display: block;}
+        }
+        @media(max-width:990px)
+        {
+            .xmany .many
+            {               
+                grid-template-rows: 2;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media(max-width:900px)
+        {
+            .wordp h2{width: 100%;}
+        }
+        @media(max-width:770px)
+        {
+            .xmany{padding:20px 120px ;}
+            .xmany .many
+            {           
+               grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="sub">
+        <div class="menu"><i class="fa-solid fa-bars"></i></div>
+        <div class="sub1"> <a href=""> GLOWING</a>
+        </div>
+        <div class="sub2">
+            <ul>
+                <a href="" ><li class="li">Demos </li></a>
+                <a href=""><li class="li"> Shop</li></a>
+                <a href=""><li class="li">Product</li></a>
+                <a href=""><li class="li"> Blog</li></a>
+                <a href=""><li class="li">Features</li></a>
+            </ul>
+        </div>
+        <div class="sub3">
+            <a href=""><span>Purchase Now</span></a>
+            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+    </div>
+    <div class="slider"></div>
+    <div class="theme">
+        <div class="wordp">
+            <h2>High-conversion WooCommerce WordPress Theme</h2>
+        </div>
+        <div class="xmany">
+            <div class="many">
+                <div class="xx"></div>
+            <div class="xx"></div>
+            <div class="xx"></div>
+            <div class="xx"></div>
+            </div>
+            
+        </div>                
+    </div>
+</body>
+</html>

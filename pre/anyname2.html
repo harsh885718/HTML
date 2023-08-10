@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            background: gray;
+        } */
+        .main{
+            height: 140px;
+            width: 240px;
+            background: transparent;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .x
+        {
+            height: 120px;
+            width: 220px;
+            background: white;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .y
+        {
+            height: 100px;
+            width: 200px;
+            /* background: lawngreen; */
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 50PX;
+            text-align: center;
+            line-height: 100px;
+            animation: gra 1s linear infinite;
+
+        }
+        .z
+        {
+            height: 200%;
+            width: 200%;
+            background: conic-gradient(white 0%,white 12.5%,red 12.5%,red 23%,white 23%,white 61.5%,blue 50%,blue 73.5%,white 70%,white 100%);
+            position: absolute;
+            top: -70px;
+            left: -120px;
+            z-index: -1;
+            /* animation:  harsh 1s linear infinite; */
+            
+        }
+     @keyframes harsh
+     {
+        to{ transform: rotate(360deg);}
+     }
+
+          @keyframes gra {
+    0% {
+     
+      background: linear-gradient(90deg, #ff670f 0%, #ff670f 21%, #ffffff 56%, #0eea57 88%);
+    }
+    50% {
+    
+      background: linear-gradient(90deg, #ff670f 0%, #ff670f 10%, #ffffff 40%, #0eea57 60%);
+    }
+    100% {
+      background: linear-gradient(90deg, #ff670f 0%, #ff670f 0%, #ffffff 10%, #0eea57 40%);
+    }
+  }
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="x"></div>
+        <div class="y">Harsh</div>
+        <div class="z"></div>
+    </div>
+</body>
+</html>

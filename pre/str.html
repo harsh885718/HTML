@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .main
+        {
+            /* height: 200px ; */
+            width: 80vw;
+            border: 1px solid;
+            margin: auto;
+            border-radius: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background:darkgoldenrod;
+            top: -100px;
+
+            
+            
+
+        }
+        .q
+        {
+            /* border: 1px solid black; */
+            height: 100px ;
+            width: 39.33%;
+        }
+        .w
+        {
+            line-height: 100px;
+            font-size: 30px;
+            color: white;
+            width: 20%;
+           
+        }
+
+        .fa-solid
+        {
+            background: black;
+            padding: 20px;
+            border-radius: 50%;
+            transition: .31s;
+        }
+        .fa-solid:hover
+        {
+            background: rgb(8, 73, 8);
+        }
+        .p  
+        {
+            line-height: 100px;
+            /* font-size: 40px; */
+            font-family: var(--agrion-font-two);
+
+        }
+        a
+        {
+            text-decoration: none;
+            color: #000;
+        }
+        span a:hover
+        {
+            color:  rgb(8, 73, 8);
+        }
+        .xmain
+        {
+            height: 550px;
+            width: 100%;
+            background: green;
+            /* padding-top: -9000px; */
+            position: relative;
+            
+        }
+        .font
+        {
+            /* width: 400px; */
+            /* border: 1px solid; */
+            text-align: center;
+            margin: auto;
+            /* margin-top: 70px; */
+            margin-bottom: 30px;
+        }
+        .font span
+        {
+            font-size: 20px;
+            
+        }
+        .cart
+        {
+            /* border: 1px solid black; */
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            /* margin-top: 150px; */
+        }
+        .xcart
+        {
+            /* border: 1px solid black; */
+            height: 350px;
+            width: 300px;
+            border-radius: 10px;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+            /* transform-style: preserve-3d; */
+        }
+  
+        .xcart::after
+        {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+            background: rgba(94, 92, 92,.5);
+            transform:perspective(1000px) rotateX(90deg) scaleY(0.5);
+            transition: 1s;
+        }
+        .xcart:hover::after
+        {
+            transform:rotateX(0deg) ;
+            
+        }
+        .a
+        {
+            background: url(img/project-one-1.jpg);
+            background-size: 100% 100%;
+        }
+        .b
+        {
+            background: url(img/project-one-2.jpg);
+            background-size: 100% 100%;
+        }
+        .c
+        {
+            background: url(img/project-one-3.jpg);
+            background-size: 100% 100%;
+        }
+        .d
+        {
+            background: url(img/project-one-4.jpg);
+            background-size: 100% 100%;
+        }
+        .xx
+        {
+            .cart{  flex-wrap: wrap; gap: 30px;}
+            .xcart{width: 400px; height: 500px;}
+        }
+        
+    </style>
+</head>
+<body>
+  
+    <div class="xmain">
+        <div class="xx">
+        <div class="main">
+            <div class="q p">HEALTHY PRODUCTS</div>
+            <div class="q w"><i class="fa-solid fa-phone-volume"></i></div>
+            <div class="q"><p>Lorem ipsum dolor sit am cons sid</p>
+            <span><a href="">+ 1- (246) 333-0088</a></span></div>
+        </div>
+    </div>
+        <div class="top">
+        <div class="font">
+          <h3>Our Latest Projects</h3>  
+        <span> RECENTLY COMPLETED PROJECTS</span>
+        </div>
+        <div class="cart">
+            <a href="#" class="img"></a><div class="xcart a"></div>
+            <div class="xcart b"></div>
+            <div class="xcart c"></div>
+            <div class="xcart d"></div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

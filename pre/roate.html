@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            position: relative;
+            height: 300px;
+            width: 300px;
+            /* background: lightblue; */
+            margin: 100px auto;
+            background: transparent;
+        }
+        .f1
+        {
+            height: 200px;
+            width: 200px;
+            /* background: lightblue; */
+          
+            border-top: 10px solid red;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            border-radius: 50%;
+            animation: yash 1s infinite;
+        }
+        .f2
+        {
+            height: 150px;
+            width:150px;
+            /* background: lightcoral; */
+            border-top: 10px solid red;
+            position: absolute;
+            top: 75px;
+            left: 75px;
+            border-radius: 50%;
+            animation: harsh 1s infinite;
+        }
+        @keyframes harsh
+        {
+            from{transform: rotate(-0deg);}
+            to{transform: rotate(360deg);}
+        }
+        @keyframes yash
+        {
+            from{transform: rotate(360deg);}
+            to{transform: rotate(0deg);}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="f1">
+      
+        </div>
+        <div class="f2"></div>
+    </div>
+   
+</body>
+</html>
