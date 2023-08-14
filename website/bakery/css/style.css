@@ -82,8 +82,8 @@ html
 }
 .slider
 {
-    border: 1px solid black;
-    height: 590px;   
+    /* border: 1px solid black; */
+    height: 550px;   
     /* overflow: hidden;   */
     margin-top: 90px; 
 }
@@ -109,6 +109,37 @@ html
   .swiperslider:nth-child(3n) {
     background: url(../img/img-slider-1.jpg);
   }
+.swiperslider h3
+{
+    font-size: 40px ;
+    margin-top: 150px;
+}
+.swiperslider p
+{
+    margin-top: 30px;
+    font-weight: 100;
+    color: #1c1c1c;
+}
+.swiperslider div
+{
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background: #e34b31;
+    color: white;
+    padding: 5px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.swiperslider div span
+{
+    font-size: 22px;
+    display: none;
+
+}
 
 .deal
 {
@@ -591,5 +622,66 @@ ul .bars
     background: #fff;
     padding: 100px;
 }
-
-
+.mainthemes
+{
+    display: flex;
+    gap : 35px;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+   
+}
+.NouThemes
+{
+    border: 1px solid black ;
+    width: 560PX;
+    padding: 0px 15px;
+    border-radius: 7px; 
+}
+.NouThemes h4
+{
+    margin-top: 100px;
+    font-size: 35px;
+   
+}
+.NouThemes p
+{
+    margin-top: 20px;
+}
+.NouThemes .button1
+{
+    margin-top: 30px;
+    background: #ee7560;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 7px 15px;
+    margin-bottom: 100px    ;
+}
+.nou
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 35px;
+    border: none;
+}
+.learning
+{
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 7px;
+    padding: 0px 15px;
+}
+.learning h6
+{
+    font-size: 25px;
+    margin-top: 17px;
+}
+.learning p
+{
+    margin-top: 10px;
+}
+.learning .button1
+{
+    margin: 0;
+    margin-top: 15px;
+}

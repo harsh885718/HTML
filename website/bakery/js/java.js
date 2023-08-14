@@ -14,17 +14,39 @@ var currentScrollPos = window.pageYOffset;
         window.scrollTo(0, 0)
     }
 
-    var swiper_1 = new Swiper(".xslider", {
+    ul = document.getElementById('ul1')
+    bar = document.getElementById('navbar')
+    
+    
+    
+    function submenu() 
+    {
+    if(ul.style.display == "none" )
+    {
+    ul.style.display = "block" ;
+    }
+    else
+    {
+    ul.style.display = "none" ;
+    }
+    }
+
+
+
+    var swiper = new Swiper(".xslider", {
       direction: "vertical",
       grabCursor: true,
       effect: "creative",
       
       loop: true ,
-      speed: 1800,
+      speed: 1000,
       autoplay  :{
-      delay :2000,
+      delay :2500,
       },      
-//      
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+},
 creativeEffect: {
 prev: {
 shadow: true,
@@ -37,6 +59,8 @@ translate: ["100%", 0, 0],
 
 
 });
+
+
 
     var swiper_2 = new Swiper(".mySwiper", {
       slidesPerView: 4,

@@ -15,26 +15,67 @@
 
 @media(max-width:500px)
 {
-    .menu{padding: 0 100px;}
-    .xdeal .day{width: 100%;}
+    .menu{
+        padding: 0 100px;
+    }
+    .xdeal .day{
+        width: 100%;
+    }
     /* .header{ background: red;} */
     
     /* .him{margin: 0; padding: 0;} */
-    .head{ padding: 20px 20px;}
-    .ul1{display: none;  }
+    .head{
+         padding: 20px 20px;
+        }
+    .hed1{
+       
+        }
+    .ul1{
+        display: none; 
+        }
     /* .him{margin-left: 10px;}   */
     /* ul{margin-left: 200px;}   */
-    .bars{display: block;}
-    .deal{padding: 0;}
-    .honey{width: 100%;}
-    .xhoney{width: 100%;padding-left: 0;margin-top: 20px; }
-    .offer{padding: 0;}
-    .cakes{padding: 0;}
-    .xcakes{width: 100%;}
-    .baker{padding: 60px;}
-    .xbaker{width: 100%;}
-    .info{width: 100%;}
-    .xthemes{width: 100%;}
-    .menu{padding: 0 30px;}
-    .swiper-slide .para{font-size: 18px;  margin: 10px;}
+    .bars{
+        display: block;
+    }
+    .deal{
+        padding: 0;
+    }
+    .honey{
+        width: 100%;
+    }
+    .xhoney{
+        width: 100%;
+        padding-left: 0;
+        margin-top: 20px; 
+    }
+    .offer{
+        padding: 0;
+    }
+    .cakes{
+        padding: 0;
+    }
+    .xcakes{
+        width: 100%;
+    }
+    .baker{
+        padding: 60px;
+    }
+    .xbaker{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+    }
+    .xthemes{
+        width: 100%;
+    }
+    .menu{
+        padding: 0 30px;
+    }
+    .swiper-slide .para{
+        font-size: 18px;  
+        margin: 10px;
+    }
+
 }
