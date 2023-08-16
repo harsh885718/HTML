@@ -613,7 +613,7 @@ ul .bars
 }
 .font .fa:hover
 {
-    color: #ee7560;
+    color:  #ee7560;
 }
 .blog
 {
@@ -624,11 +624,19 @@ ul .bars
 }
 .mainthemes
 {
-    display: flex;
-    gap : 35px;
-    /* border: 1px solid black; */
+    width: auto;
+   
+    /* background: red; */
     margin-top: 50px;
    
+}
+.themesx
+{
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap : 35px;
 }
 .NouThemes
 {
@@ -636,6 +644,9 @@ ul .bars
     width: 560PX;
     padding: 0px 15px;
     border-radius: 7px; 
+    background: url(/img/new-large-555x500\ \(1\).jpg);
+    background-size: cover;
+    /* margin: auto; */
 }
 .NouThemes h4
 {
@@ -661,6 +672,8 @@ ul .bars
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    background: none;
+    /* margin: 0; */
     gap: 35px;
     border: none;
 }
@@ -685,3 +698,14 @@ ul .bars
     margin: 0;
     margin-top: 15px;
 }
+.learning1
+{
+    background: url(/img/new-small-1-555x235\ \(1\).jpg);
+    background-size: cover;
+}
+.learning2
+{
+    background: url(/img/new-small-2-555x235\ \(1\).jpg);
+    background-size: cover;
+}
+    

@@ -1,5 +1,5 @@
 
-@media(max-width:1090px)
+@media(max-width:1100px)
 {
     /* .header{padding: 20px 100px;} */
     /* .him{height: 70px; width: 70px;} */
@@ -11,6 +11,7 @@
     .hed1{margin: 0 0;}
     ul{display: flex;}
     ul .bars{ display: block;}
+    .themesx{width: 100%;}
 }
 
 @media(max-width:500px)
@@ -26,9 +27,6 @@
     /* .him{margin: 0; padding: 0;} */
     .head{
          padding: 20px 20px;
-        }
-    .hed1{
-       
         }
     .ul1{
         display: none; 
@@ -77,5 +75,8 @@
         font-size: 18px;  
         margin: 10px;
     }
-
+    .blog
+    {
+        padding: 100px 20px;
+    }
 }
