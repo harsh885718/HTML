@@ -761,7 +761,7 @@ ul .bars
     /* border: 1px solid black; */
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 150px;
     background: rgba(30, 30, 38, 0.8);
     color: #fff;
     padding: 40px;
@@ -820,3 +820,119 @@ ul .bars
     background: #ee7560;
     cursor: pointer;
   }
+.aboutcompany
+{
+    display: flex;
+    padding: 20px 180px;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: white;
+    background: #2c2a2a;
+   
+
+}
+.aboutcompany *
+{
+    /* border: 1px solid black; */
+}
+
+.clogo
+{
+    /* border: 1px solid black; */
+   /* object-fit: cover;  */
+   height: 150px;
+   width: 150px;
+
+   
+}
+.aboutus
+{
+    width: 500px;
+    height: 200px;
+    padding: 25px;
+    font-size: 20px;
+}
+.moreinfo
+{
+    border: 1px solid black;
+    padding: 30px;
+}
+.mcompany
+{
+    border: 1px solid black;
+    width: 1300px;
+    display: flex;
+    margin: auto;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* background: red; */
+
+}
+.company
+{
+    /* border: 1px solid black; */
+    height: 300px;
+    width: 300px;
+    /* background: #c14a4a; */
+    margin: auto;
+    padding: 20px;
+    font-size: larger;
+    line-height: 25px;
+  
+}
+.company p
+{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.company .img1
+{
+    height: 40px;
+    width: 80px;
+    border: 1px solid black;
+    display: inline-block;
+    border: none;
+    margin: 20px 0;
+
+}
+
+.company span
+{
+    line-height: 30px   ;
+    color: #7a7676;
+}
+.t span
+{
+    line-height: 45px;
+    font-size: 21px;
+    cursor: pointer;
+}
+.t span:hover
+{
+    color: #e34b31;
+}
+.company ul
+{
+    margin-top: 50px;
+
+}
+.company ul li
+{
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 15px;
+}
+.company ul li:hover
+{
+    color: #e34b31;
+}
+.contactus .para
+{
+    margin-top: 50px;
+    font-size: 18px;
+}
+.contactus .para span
+{
+    color: #e34b31;
+}
