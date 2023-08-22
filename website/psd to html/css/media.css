@@ -47,4 +47,20 @@
 {
     width: 100%;
 }
+.cuisine
+{
+    padding: 50PX;
+}
+.cuisine p
+{
+    width: 100%;
+}
+.cuisine ul li
+{
+    margin: 0 15PX;
+}
+.imgonly
+{
+    height: 400px;
+}
 }
