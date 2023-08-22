@@ -38,7 +38,7 @@
     </div>
      
      <button class="button" onclick="gototop()"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
-    <div class="slider">
+    <!-- <div class="slider">
         <div class="swiper xslider">
             <div class="swiper-wrapper">
               <div class="swiper-slide swiperslider">
@@ -60,7 +60,20 @@
 
             </div>
     </div>
+    </div> -->
+
+<!-- slider -->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <img class="swiper-slide" src="https://picsum.photos/id/237/200/300" alt="">
+        <img class="swiper-slide" src="https://picsum.photos/id/237/200/300" alt="">
+        <img class="swiper-slide" src="https://picsum.photos/id/237/200/300" alt="">
+        <img class="swiper-slide" src="https://picsum.photos/id/237/200/300" alt="">
+        <img class="swiper-slide" src="https://picsum.photos/id/237/200/300" alt="">
     </div>
+ <!-- slider-close -->
+
+
     <div class="deal">
         <div class="xdeal">
             <div class="dealleft day"></div>
@@ -154,29 +167,30 @@
     </div>
     <div class="ceo ceoSwiper">
         <div class="swiper-wrapper ceoslid">
-          <div class="swiper-slide er">  <div class="ximage">
-            <div class="img"></div>
+          <div class="swiper-slide er"> 
+             <div class="ximage">
+            <div class="img  "></div>
             <div>Logan May - CEO &amp; Founder Invision</div>
         </div>
             <p class="para">Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit <br>  cheesecake. Cookie topping sweet muffin pudding tart bear claw sugar plum croissant.</p></div>
           <div class="swiper-slide"> 
              <div class="ximage">
-            <div class="img"></div>
+            <div class="img i2"></div>
             <div>Logan May - CEO &amp; Founder Invision</div>
         </div>
             <p class="para">Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit <br>  cheesecake. Cookie topping sweet muffin pudding tart bear claw sugar plum croissant.</p></div>
           <div class="swiper-slide">  <div class="ximage">
-            <div class="img"></div>
+            <div class="img i3"></div>
             <div>Logan May - CEO &amp; Founder Invision</div>
         </div>
             <p class="para">Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit <br>  cheesecake. Cookie topping sweet muffin pudding tart bear claw sugar plum croissant.</p></div>
           <div class="swiper-slide">  <div class="ximage">
-            <div class="img"></div>
+            <div class="img i4"></div>
             <div>Logan May - CEO &amp; Founder Invision</div>
         </div>
             <p class="para">Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit <br>  cheesecake. Cookie topping sweet muffin pudding tart bear claw sugar plum croissant.</p></div>
           <div class="swiper-slide">  <div class="ximage">
-            <div class="img"></div>
+            <div class="img i5"></div>
             <div>Logan May - CEO &amp; Founder Invision</div>
         </div>
             <p class="para">Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit <br>  cheesecake. Cookie topping sweet muffin pudding tart bear claw sugar plum croissant.</p>
@@ -184,16 +198,7 @@
           
         </div>
       </div>
-    <!-- <div class="ceo">
-        <div class="companyceo">
-        <div class="ximage">
-        <div class="img"></div>
-        <div>Logan May - CEO &amp; Founder Invision</div>
-    </div>
-        <p>Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit <br>  cheesecake. Cookie topping sweet muffin pudding tart bear claw sugar plum croissant.</p>
-    </div>
-    
-    </div> -->
+
     <div class="offer">
         <div class="xsweet">Making People Happy<br>
             <span>OFFER THIS WEEK</span>
@@ -463,6 +468,34 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
    <script src="js/java.js"></script> 
+  <script>
+    var swiper = new Swiper(".my-Swiper", {
+  slidesPerView: 2.5,
+  spaceBetween: 20,
+  pagination: {
+  el: ".swiper-pagination",
+  clickable: true,
+  },
+  autoplay: {
+  delay: 3000, // Adjust the delay (in milliseconds) between slides
+  },
+  });
+  var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop: true, // Enable continuous loop
+      autoplay: {
+        delay: 3000, // Delay between each slide in milliseconds
+        disableOnInteraction: false, // Allow interaction with swiper while autoplaying
+      },
+    });
+  </script>
  
 
 </body>

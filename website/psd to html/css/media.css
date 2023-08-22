@@ -1,0 +1,50 @@
+@media(max-width:505px)
+{
+    .navbar .bars
+{
+    display: block;
+}
+.navbar .menu
+{
+    display: none;
+}
+.navmenu
+{
+    text-align: right;
+}
+.navbar
+{
+    padding: 30px 40px;
+}
+.webmain
+{
+    background-size: cover;
+}
+.flavoursmain
+{
+    padding: 0;
+}
+.traditional .x
+{
+    width: 100%;
+    height: 300PX;
+}
+.plate
+{
+    padding: 0;
+
+
+}
+.platename .w
+{
+    height: 250PX;
+}
+.aboutdedish
+{
+    padding: 40px ;
+}
+.platename
+{
+    width: 100%;
+}
+}

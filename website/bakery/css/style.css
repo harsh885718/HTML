@@ -91,55 +91,23 @@ html
 {
     width: 100%;
 }
-
-  .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } 
-  .swiperslider:nth-child(1n) {
-    background: url(../img/slider-21.jpg);
-  }
-
-  .swiperslider:nth-child(2n) {
-    background: url(../img/slider-31.jpg);
-    background-size: cover;
-  }
-
-  .swiperslider:nth-child(3n) {
-    background: url(../img/img-slider-1.jpg);
-  }
-.swiperslider h3
-{
-    font-size: 40px ;
-    margin-top: 150px;
-}
-.swiperslider p
-{
-    margin-top: 30px;
-    font-weight: 100;
-    color: #1c1c1c;
-}
-.swiperslider div
-{
-    /* border: 1px solid black; */
-    border-radius: 50px;
-    display: inline-block;
-    margin-top: 30px;
+/* slider-start */
+.swiper-slide {
+    text-align: center;
     font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    background: #e34b31;
-    color: white;
-    padding: 5px 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.swiperslider div span
-{
-    font-size: 22px;
-    display: none;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-}
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+/* slider-close */
 
 .deal
 {
@@ -859,7 +827,7 @@ ul .bars
 }
 .mcompany
 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 1300px;
     display: flex;
     margin: auto;
@@ -890,7 +858,7 @@ ul .bars
 {
     height: 40px;
     width: 80px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: inline-block;
     border: none;
     margin: 20px 0;

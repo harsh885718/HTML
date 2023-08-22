@@ -14,8 +14,9 @@ var currentScrollPos = window.pageYOffset;
         window.scrollTo(0, 0)
     }
 
-    ul = document.getElementById('ul1')
-    bar = document.getElementById('navbar')
+  
+   ul =  document.getElementById("ul1")
+    bar = document.getElementById("navbar")
     
     
     
@@ -24,10 +25,11 @@ var currentScrollPos = window.pageYOffset;
     if(ul.style.display == "none" )
     {
     ul.style.display = "block" ;
+    
     }
     else
     {
-    ul.style.display = "none" ;
+    ul.style.display = "none" ;
     }
     }
 
@@ -47,15 +49,15 @@ var currentScrollPos = window.pageYOffset;
           el: ".swiper-pagination",
           clickable: true,
 },
-creativeEffect: {
-prev: {
-shadow: true,
-translate: ["-20%", 0, -1],
-},
-next: {
-translate: ["100%", 0, 0],
-},
-},
+// creativeEffect: {
+// prev: {
+// shadow: true,
+// translate: ["-20%", 0, -1],
+// },
+// next: {
+// translate: ["100%", 0, 0],
+// },
+// },
 
 
 });

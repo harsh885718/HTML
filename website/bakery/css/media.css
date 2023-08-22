@@ -17,25 +17,19 @@
     .themesx{width: 100%;}
 }
 
-@media(max-width:500px)
+        @media(max-width:500px)
 {
-    .menu{
-        padding: 0 100px;
-    }
+
     .xdeal .day{
         width: 100%;
     }
-    /* .header{ background: red;} */
-    
-    /* .him{margin: 0; padding: 0;} */
+
     .head{
          padding: 20px 20px;
         }
     .ul1{
         display: none; 
         }
-    /* .him{margin-left: 10px;}   */
-    /* ul{margin-left: 200px;}   */
     .bars{
         display: block;
     }
