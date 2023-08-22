@@ -515,11 +515,11 @@ input::placeholder
 
  .newmenu-2
  {
-    height: 820px;
     background: #d4d8d9;
-    padding: 50px 100px;
+    padding: 50px ;
     display: flex;
     flex-wrap: wrap;
+
  }
  .newmenu-2 h4
  {
@@ -541,13 +541,164 @@ input::placeholder
  {
     height: 500px;
     width: 340px;
-    border: 1px solid black;
+
     margin: auto;
+    background: #fff;
  }
  .newmenu-2 .food .foodimg
  {
     height: 300px;
-    border: 1px solid black;
+
  }
- 
- /* newmenu-2 div style END */END
+ .newmenu-2 .food .aboutfood
+ {
+    height: 200px;
+    padding: 20px;
+
+ }
+ .newmenu-2 .food .aboutfood h6
+ {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Raleway", cursive;
+ }
+ .newmenu-2 .food .aboutfood h5
+ {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Raleway", cursive;
+    margin-top: 20px;
+ }
+ .newmenu-2 .food .aboutfood p
+ {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Raleway", cursive;
+    margin-top: 8px;
+ }
+ .newmenu-2 .food .aboutfood div
+ {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Raleway", cursive;
+    margin-top: 25px;
+    border-bottom:5px solid #ff992b;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+ }
+  /* newmenu-2 div style end */
+
+
+
+
+ /* steward div style start*/
+ .steward
+ {
+
+    background: #2a3b40;
+    color: #fff;
+    padding: 50px 300px;
+    text-align: center;
+    justify-content: center;
+ }
+ .steward h6
+ {
+    font-size: 83px;
+    font-weight: bold;
+    font-family: "Raleway", cursive;
+
+ }
+ .steward p
+ {
+    font-size: 19px;
+    font-weight: 400;
+    font-family: "Raleway", cursive;
+
+ }
+ .steward div
+ {
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Raleway", cursive;
+    margin-top: 20px;
+
+ }
+ .steward ul
+ {
+    list-style: none;
+    color: #2a3b40;
+    margin-top: 30px;
+ }
+ .steward ul li
+ {
+    background: #d4d8d9;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 30px;
+    margin: 0 10px;
+    font-size: 22px;
+ }
+ /* steward div style end*/
+
+
+
+
+ /* about div style start*/
+
+ .about
+ {
+    /* height: 325px; */
+    background: #d4d8d9;
+    padding: 70px ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    justify-content: center;
+
+ }
+ .xabout
+{
+    width: 400px;
+
+}
+.xabout h4
+{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Raleway", cursive;
+}
+.xabout  p
+{
+    margin-top: 30px;
+    font-size: 19px;
+    font-family: "Raleway", cursive ;
+}
+.about1
+{
+    display: flex;
+    gap: 100px;
+
+}
+
+.last h5
+{
+    font-size: 21px;
+    font-family: "Raleway", sans-serif ;
+    font-weight: bold;
+}
+.last ul 
+{
+    list-style: none;
+    margin-top: 30px;
+}
+.last ul li
+{
+    font-size: 21px;
+    font-family: "Raleway", serif ;
+    font-weight: bold; 
+}
+ /* about div style end*/

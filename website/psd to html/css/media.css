@@ -63,4 +63,27 @@
 {
     height: 400px;
 }
+.newmenu-2
+{
+    gap: 50px;
+    padding: 0;
+}
+
+.steward
+{
+    padding: 40px;
+}
+.newmenu-2
+{
+    padding: 50px;
+}
+.img2, .img1
+{
+    display: none;
+}
+
+.about1
+{
+    gap: 50px;
+}
 }
