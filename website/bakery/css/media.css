@@ -93,4 +93,19 @@
         margin-top: 650px;
         padding: 0;
     }
+    .first .swiper-slide
+    {
+        padding: 30px;
+    }
+    .first .swiper-slide h3
+    {
+        margin-top: 100px;
+        font-size: 20px;
+    }
+    .first .swiper-slide p
+    {
+        font-size: 15px;
+        width: 100%;
+
+    }
 }
