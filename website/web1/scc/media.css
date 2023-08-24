@@ -193,6 +193,15 @@
     {
         grid-template-columns: 1fr 1fr;
     }
+    .oll
+    {
+        width: 50%;
+    }
+    .element
+    {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
 
 
 

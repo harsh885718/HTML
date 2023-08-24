@@ -477,7 +477,77 @@
         }
 
 
+/* slider css start */
 
+.slidermain
+{
+    border: 1px solid;
+    padding: 50px 20px;
+}
+.slidermain h5
+{
+    font-size: 80px;
+     text-align: center;
+     font-weight: bold;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.slidermain p
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.slidermain .para1
+{
+    font-size: 50px;
+    margin-top: 20px;
+ 
+}
+.slidermain .para2
+{
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+.item {
+    position: relative;
+    height: 500px;
+  }
+
+  .item {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    width: 100%;
+    /* padding: 0 100px; */
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;   
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img
+  {
+    border-radius: 20px;
+  }
+  .extra h5
+  {
+    font-size: 20px;
+  }
+/* slider css end */
 
         /* Features style start */
 
@@ -538,7 +608,7 @@
 
         .media 
         {
-            padding: 50px;
+            padding: 50px 0px;
         }
         .media h5
         {
@@ -566,21 +636,51 @@
         .oll
         {
             width: 200px;
-           overflow: hidden;
-
+            /* border: 1px solid black; */
         }
         .imgoll
         {
-           
+            width: 100%;
+            /* border: 1px solid black; */
         }
+       
         .name
         {
+            /* border: 1px solid red; */
             text-align: center;
-            font-size: 20px;
-            width: 100%;
+            font-size: 15px;
+            width: 200px;
             font-weight: 600;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
         }
         
         /* meida div end       */
+
+
+
+        /* element div style start */
+
+
+        .element
+        {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            padding: 50px;
+        }
+        .element h5
+        {
+            font-size: 50px;
+            font-weight: 500;
+            margin-top: 130px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .element p
+        {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        /* element div style end */
