@@ -3,7 +3,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            border: 1px solid black;
+            /* border: 1px solid black; */
            
         }
         body
@@ -475,45 +475,112 @@
             font-size: 18px;
             font-weight: bold ;
         }
-        .layout-main
+
+
+
+
+        /* Features style start */
+
+
+
+        .Features
         {
-            padding: 30px;
-            background: rgb(238,238,238);
+            /* height: 700px; */
+            background: #4e7661;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 70px 50px;
         }
-        .layout
-        {   s
-            /* border: 1px solid; */
-            display: grid;          
-            grid-template-columns: 1fr 1fr;      
-            gap: 30px ;
-        }
-        .layout .img
+        .Features h3
         {
-            background: url(../image/image-landing-93.jpg);
-            background-size: 100% 100%;
-            border-radius: 30px;           
-            /* border: 1px solid red; */
+            font-weight: 500;
+            font-size: 55px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            /* margin-top: 100px;  */
+
         }
-        .layout .product
+        .Features p
         {
-            /* border: 1px solid; */
-            padding:50px 100px;
+            font-size: 21px;
+            text-align: center;
+            margin-top: 45px;
         }
-        .count
+        .Builder
         {
-            font-size: 100px;
-            font-weight: 900;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 60px;
+            padding: 80px;
         }
-        .pl
+        
+        .drage
         {
-            font-size: 40px;
-            font-weight: 900;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+
+        }
+        .drage h5
+        {
+            font-size: 20px;
+        }
+        .drage p
+        {
+            text-align: left;
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 10px;
         }
 
-        p
+        /* Features style end */
+
+        /* meida div start */
+
+        .media 
         {
-            font-size: 15px;
-            padding-top: 25px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            width: 350px;
+            padding: 50px;
         }
+        .media h5
+        {
+            font-weight: 500;
+            font-size: 55px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        .media p
+        {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 400;
+            margin: auto;
+            margin-top: 20px;
+            width: 700px;
+            margin-bottom: 30px;
+        }
+        .grid
+        {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 18px;
+        }
+        .oll
+        {
+            width: 200px;
+           overflow: hidden;
+
+        }
+        .imgoll
+        {
+           
+        }
+        .name
+        {
+            text-align: center;
+            font-size: 20px;
+            width: 100%;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        
+        /* meida div end       */
