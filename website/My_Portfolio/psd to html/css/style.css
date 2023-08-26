@@ -1,0 +1,704 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* navbar style start */
+.navbar
+{
+    border: 1px solid black;
+    display: flex;
+    padding: 30px 70px;
+    font-size: 35px;
+    color: aliceblue;
+    background: #2a3b40;
+}
+.navlogo
+{
+    width: 400px;
+ 
+    text-align: center      ;
+}
+.navmenu
+{
+    width: 100%;
+    text-align: center;
+
+
+}
+.navmenu ul
+{
+    word-spacing: 30px  ;
+
+}
+.navmenu ul li
+{
+    display: inline-block;
+}
+.navbar .bars
+{
+    display: none;
+}
+
+/* navbar style end */
+
+
+
+
+
+/* webside div stule start*/
+.webmain
+{
+    width: 100%;
+    height: 650px;
+    background: url(../img/i1.png);
+    background-size: 100% 120%;
+    background-position: 10px;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+.webBrunch
+{
+    height: 350px;
+    width: 550px;
+    background: rgba(218, 217, 217, 0.543);
+    text-align: center;
+    
+    
+}
+.para1
+{
+    margin-top:60px;
+    font-size: 60px;
+    font-family: "cookie", cursive;
+}
+.para2
+{
+    /* margin-top: 50px; */
+    font-size: 60px;
+    font-family: "Raleway" , cursive;
+    font-weight: bold;
+    color: #ad6c12;
+}
+.webBrunch button
+{
+    font-size: 27px;
+    border: none;
+    padding: 10px 20px;
+    font-family: "Raleway" , cursive;
+}
+
+/* webside div stule end*/
+
+
+
+/* flavours div style start */
+
+.flavoursmain
+{
+    display: flex;
+    background: #2a3b40;
+   justify-content: center;
+   padding:50px 80px;
+}
+.traditional
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30PX;
+}
+.traditional .para
+{
+    color: aliceblue;
+
+
+}
+.traditional .para .para3
+{
+    /* width: 00px; */
+    margin-top: 50px;
+    font-size: large;
+}
+
+.traditional .x
+{
+    height: 350px;
+    width: 570px;
+}
+
+.traditional h6
+{
+    font-size: 35px;
+    margin-top: 50px;
+}
+/* flavours div style end */
+
+
+
+
+
+
+/* new div style start */
+
+.new
+{
+    background: #d4d8d9;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 50px 100px;
+}
+
+.circal .c1
+{
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    background: #2a3b40;
+    display: inline-block;
+    margin-top: 30px;
+}
+.y
+{
+    width: 300px;
+    margin: auto;
+}
+.y p
+{
+
+    font-size: 17px;
+    margin-top: 30px;
+}
+.y h5
+{
+    font-size: 19px;
+    margin-top: 20px;
+}
+/* new div style end */
+
+
+
+
+
+/* plate div style start */
+.plate
+{
+    background: url(../img/i2.png);
+    background-size: cover ;
+    width: 100%;
+    padding: 100px 100px;
+    
+}
+.plate .yourplate
+{
+    background: rgba(218, 217, 217, 0.543);
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.plate .yourplate h2
+{
+    text-align: center;
+    font-size: 48px;
+    width: 100%;
+    margin-top: 70px;
+    font-family: "Raleway" , cursive;
+    line-height: 40px;
+    color: #ad6c12;
+    margin-bottom: 30px ;
+
+    
+}
+.plate .yourplate h2 span
+{
+    font-family: "cookie", cursive;
+    font-size: 77px;
+    color: black;
+}
+
+
+.platename
+{
+    /* border: 1px solid; */
+    width: 50%;
+    display: flex;
+    
+    /* border: 1px solid black; */
+
+}
+
+.platename .w
+{
+   width: 50%;
+    /* border: 1px solid red; */
+}
+.aboutdedish
+{
+    padding: 60px;
+    text-align: center;
+}
+.aboutdedish h6
+{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Raleway" , cursive;
+
+}
+.aboutdedish p
+{
+    font-size: 17px;
+    font-family: "Raleway" , cursive;
+    margin-top: 20px;
+
+}
+.aboutdedish  div
+{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Raleway" , cursive;
+}
+/* plate div style end */
+
+
+/* cuisine div style start */
+.cuisine
+{
+    /* height: 400px; */
+    background: #d4d8d9;
+    position: relative;
+    text-align: center;
+    padding: 80px ;
+    z-index: -2;
+
+}
+.img2, .img1
+{
+    position:absolute;
+    z-index: -1;
+}
+.img1
+{
+    top: 0;
+    left: 0;
+}
+.img2
+{
+    top: 0;
+    right: 0;
+    transform: rotate(180deg);
+
+}
+.cuisine h4
+{
+    font-size: 29px;
+    font-family: "Raleway" , cursive;
+
+}
+.cuisine p
+{
+    font-size: 19px;
+    font-family: "Raleway" , cursive;
+    width: 750px;
+    margin:30px auto;
+
+}
+.cuisine .linecircle .c1
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    margin-left: 0 10px;
+    background: #2a3b40;
+    display: inline-block;
+}
+.cuisine ul
+{
+    margin-top: 40px;
+}
+.cuisine ul li
+{
+    font-size: 17px;
+    font-family: "Raleway" , cursive;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 50px;
+
+}
+/* cuisine div style end */
+
+
+
+ /* discover div style start  */
+ .discover
+ {
+
+    background: url(../img/d1.png);
+    background-size: cover;
+    padding-top: 170px;
+ }
+ .newmenu
+ {
+    /* height: 602px; */
+    background: rgba(186, 185, 185, 0.543);
+    /* margin-top: 197PX; */
+    padding: 50px;
+ }
+ .newmenu h4
+ {
+    text-align: center;
+    font-size: 48px;
+    width: 100%;
+    font-family: "Raleway" , cursive;
+    line-height: 40px;
+    color: #ad6c12;
+
+ }
+ .newmenu h4 span
+ {
+    font-family: "cookie", cursive;
+    font-size: 77px;
+    color: black;
+ }
+ .newmenu
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+}
+ .newdesies
+ {
+    height: 78px;
+    width: 450px;
+    display: flex;
+ }
+ .newdesies .img
+ {
+    height: 75px;
+    width: 120px;
+    background: url(../img/Ellipse\ .png);
+    background-size: 100% 100%;
+    margin-right: 10px;
+    position: relative;
+
+ }
+ .newdesies .img img
+{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.newdesies .img .we
+{
+    top: 15px;
+    left: 15px;
+}
+ .newdesies .newvarity
+ {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Raleway" , sans-serif;
+ }
+ .newdesies .newvarity h6
+ {
+    margin-top: 4px;
+ }
+ .newdesies .newvarity p
+ {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 5px;
+
+ }
+ .newdesies .newvarity p span
+ {
+    font-weight: bold;
+ }
+ /* discover div style end  */
+
+
+ /* imgonly div style start */
+ 
+ .imgonly
+ {
+    height: 890px;
+    background: url(../img/imgonly.png);
+    background-size: cover;
+ }
+ /* imgonly div style end */
+
+
+ /* Book here style start */
+
+ .bookhere
+ {
+    /* height: 450px; */
+    background: #2a3b40;
+    padding: 50px;
+ }
+ .bookhere h4
+ {
+    font-family: "cookie", cursive;
+    font-size: 77px;
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+.bookhere form
+{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bookhere form .form
+{
+    /* border: 1px solid black; */
+    width: 240px;
+    margin: auto;
+    color: white;
+}
+.bookhere form .form *
+{
+    color: #fff;
+}
+.bookhere form select , input
+{
+    width: 100%;
+    background: transparent;
+    border:white 2px solid;
+    border-radius: 5px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+.bookhere form select option
+{
+    background:#2a3b40;
+}
+input::placeholder
+{
+    color: #fff;
+}
+.submit
+{
+    width: 100%;
+    text-align: center;
+    
+}
+.submit input
+{
+    width: 240px;
+    color: #fff;
+
+}
+ /* Book here style end */
+
+ /* img-1 div style start */
+
+
+ .ing-1
+ {
+    background: url();
+ }
+ /* img-1 div style end */
+
+ /* newmenu-2 div style start */
+
+
+ .newmenu-2
+ {
+    background: #d4d8d9;
+    padding: 50px ;
+    display: flex;
+    flex-wrap: wrap;
+
+ }
+ .newmenu-2 h4
+ {
+    font-family: "Raleway", cursive;
+    font-size: 44px;
+    width: 100%;
+    color: #ad6c12;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 50px;
+ }
+ .newmenu-2 h4 span
+ {
+    font-family: "cookie", cursive;
+    font-size: 77px;
+    color: black;
+ }
+ .newmenu-2 .food
+ {
+    height: 500px;
+    width: 340px;
+
+    margin: auto;
+    background: #fff;
+ }
+ .newmenu-2 .food .foodimg
+ {
+    height: 300px;
+
+ }
+ .newmenu-2 .food .aboutfood
+ {
+    height: 200px;
+    padding: 20px;
+
+ }
+ .newmenu-2 .food .aboutfood h6
+ {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Raleway", cursive;
+ }
+ .newmenu-2 .food .aboutfood h5
+ {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Raleway", cursive;
+    margin-top: 20px;
+ }
+ .newmenu-2 .food .aboutfood p
+ {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Raleway", cursive;
+    margin-top: 8px;
+ }
+ .newmenu-2 .food .aboutfood div
+ {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Raleway", cursive;
+    margin-top: 25px;
+    border-bottom:5px solid #ff992b;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+ }
+  /* newmenu-2 div style end */
+
+
+
+
+ /* steward div style start*/
+ .steward
+ {
+
+    background: #2a3b40;
+    color: #fff;
+    padding: 50px 300px;
+    text-align: center;
+    justify-content: center;
+ }
+ .steward h6
+ {
+    font-size: 83px;
+    font-weight: bold;
+    font-family: "Raleway", cursive;
+
+ }
+ .steward p
+ {
+    font-size: 19px;
+    font-weight: 400;
+    font-family: "Raleway", cursive;
+
+ }
+ .steward div
+ {
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Raleway", cursive;
+    margin-top: 20px;
+
+ }
+ .steward ul
+ {
+    list-style: none;
+    color: #2a3b40;
+    margin-top: 30px;
+ }
+ .steward ul li
+ {
+    background: #d4d8d9;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 30px;
+    margin: 0 10px;
+    font-size: 22px;
+ }
+ /* steward div style end*/
+
+
+
+
+ /* about div style start*/
+
+ .about
+ {
+    /* height: 325px; */
+    background: #d4d8d9;
+    padding: 70px ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    justify-content: center;
+
+ }
+ .xabout
+{
+    width: 400px;
+
+}
+.xabout h4
+{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Raleway", cursive;
+}
+.xabout  p
+{
+    margin-top: 30px;
+    font-size: 19px;
+    font-family: "Raleway", cursive ;
+}
+.about1
+{
+    display: flex;
+    gap: 100px;
+
+}
+
+.last h5
+{
+    font-size: 21px;
+    font-family: "Raleway", sans-serif ;
+    font-weight: bold;
+}
+.last ul 
+{
+    list-style: none;
+    margin-top: 30px;
+}
+.last ul li
+{
+    font-size: 21px;
+    font-family: "Raleway", serif ;
+    font-weight: bold; 
+}
+ /* about div style end*/
