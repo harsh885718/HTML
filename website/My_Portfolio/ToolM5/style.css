@@ -1,0 +1,133 @@
+  * {
+    /* font-family: "Roboto", Sans-serif; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    .content{
+        background: #a8d741;
+    }
+   nav .btn{
+        background:  #a8d741;
+        transition: .5s;
+    }
+    .fa-angle-right, .display-2{
+      color: #a8d741;
+    }
+    .btn:hover {
+    transform: rotate(4deg) scale(1.07);
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+.btn:hover .fa-angle-right {
+    color: #fff;
+}
+.btnn {
+    background-color: #000;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: .5s;
+}
+
+.btnn:hover {
+    transform: rotate(4deg) scale(1.07);
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+.icon a{
+  color: #000;
+}
+.card1 {
+    transition: .5s;
+}
+
+.card1:hover {
+    transform: rotate(-4deg) scale(1.001);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+.button {
+    transition: .5s;
+}
+
+.button:hover {
+    background-color: #a8d741;;
+    transform: rotate(4deg) scale(1.07);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    filter: blur(0.5px);
+}
+
+.button1 {
+    background-color:#a8d741; ;
+    transition: .5s;
+}
+
+.button1:hover {
+    background-color: #fff;
+    transform: rotate(4deg) scale(1.07);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    filter: blur(0.5px);
+}
+.button1:hover .fa-angle-right {
+    color: #fff;
+}
+.about {
+    padding: 150px 0px;
+}
+.product{
+    background:  #a8d741;
+}
+.quality{
+    background:  #fff;
+}
+.underline{
+    height: 2px;
+    background: #000;
+    top: 110%;
+    transition: .2s;
+}
+.textt:hover .underline{
+    width: 100%;
+}
+.card2 {
+    transition: .3s;
+}
+
+.card2:hover {
+    transform: rotate(-1deg) scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+}
+.our {
+    padding: 130px 0;
+}
+
+.our1 {
+    padding-bottom: 130px;
+}
+
+.our2 {
+    padding: 80px 0;
+}
+.detail {
+    background-color: #eeee;
+}
+.play {
+    top: 45%;
+    left: 45%;
+}
+.our3 {
+    padding-top: 80px;
+    padding-bottom: 130px;
+}
+.our4 {
+    padding-bottom: 80px;
+}
+input {
+    outline: none;
+}
+
+textarea {
+    outline: none;
+}

@@ -1,0 +1,112 @@
+
+@media (max-width:1200px)
+{
+    .custom{
+        grid-template-columns: 1fr;
+    }
+    .desserts {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+}
+@media (max-width:1000px)
+{
+    .nav ul{
+        display: none;
+
+    }
+    .nav i{
+        display: block;
+    }
+
+    .sweet
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows:400px 750px;
+    }
+    .vanila{
+        grid-template-rows: 1500px;
+    }
+    .custom{
+        grid-template-rows: auto;
+    }
+    .city{
+        font-size: 2rem;
+        text-align: center;
+    }
+    span{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .lorem
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px;
+    }
+    .sd
+    {
+        margin: auto;
+    }
+    .part
+    {
+        grid-template-columns: 1fr ;
+        /* grid-template-rows: ; */
+        margin: auto;
+      
+    }
+    .make
+    {
+        /* width: 90px; */
+    
+        
+    }
+    .detail
+    {
+        width: 300px;
+        margin-left: 100px;
+    }
+    .layer
+    {
+        grid-template-columns: 1fr;
+    }
+    
+    .chef {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .image1{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 320px 320px;
+    }
+    .touch{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        width: 100%;
+    }
+    .berry{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin: auto;
+    }
+  
+    .nick{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .chef{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .birthday{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto ;
+    }
+    .macarons{
+        grid-template-columns: 1fr;
+       
+    }
+
+.terms .firstbar, .secondbar, .thirdbar, .fourthbar{
+    grid-template-columns: 1fr;
+}

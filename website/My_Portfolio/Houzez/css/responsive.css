@@ -1,0 +1,74 @@
+@media (max-width:950px)
+{
+    .nav{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .hd
+    {
+    display: none;
+    }
+    .buy .s
+    {
+        width: 100%;
+    }
+   
+    .sam{
+        width: 100%;
+    }
+    .apartbox{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .firstbox, .secondbox, .thirdbox{
+        width: 100%;
+    }
+    .apartimg, .modern, .owner{
+        width: 100%;
+    }
+    .owner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .s1{
+        width: 100%;
+    }
+    .web{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ab
+    {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    }
+    .gtu{
+        width: 100%;
+    }
+    .complex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .im1, .im2, .im3{
+        width: 100%;
+    }
+    .citi{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .newyork, .newyork1{
+        width: 100%;
+    }
+    .emplye{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hoster{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
