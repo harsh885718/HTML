@@ -1,0 +1,29 @@
+1. 
+-Easy initiation. Coding is a hurricane task for a person who is unbeknownst to web ---------development.
+-Responsiveness.
+-Highly customizable.
+-Extremely user-centric.
+-Top-notch support.
+-Cross-browser compatibility.
+-JavaScript plugins to your rescue.
+-Far-reaching popularity.
+
+2.Bootstrap 4 uses a default font-size of 16px, and its line-height is 1.5. The default font-family is "Helvetica Neue", Helvetica, Arial, sans-serif. In addition, all <p> elements have margin-top: 0 and margin-bottom: 1rem (16px by default).
+
+3.Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with flexbox and is fully responsive.
+
+4.Bootstrap 4 uses Jekyll software. Bootstrap 5 uses Hugo software as it is fast static site generator. 
+
+5.“Button Groups” in Bootstrap is a class of name “btn-group” which is used to create a series of buttons in groups (without spaces) vertically or horizontally.
+
+6.1)Add an <a> tag with the class of . thumbnail around an image.
+  2)This adds four pixels of padding and a gray border.
+  3)On hover, an animated glow outlines the image.
+
+7. The biggest difference between Bootstrap 3 and Bootstrap 4 is that Bootstrap 4 now uses flexbox, instead of floats, to handle the layout. 
+
+8.<div class="alert alert-success">
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+
+9.In its simplest form, a Bootstrap card is a . card class with the . card-body class nested inside.
