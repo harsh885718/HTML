@@ -1,0 +1,40 @@
+1. JavaScript is used to change the behavior of a website.it is a client-side scripting language. it is used for dynamic changes.it is the object-oriented approach.
+
+2. The isNaN() function determines whether a value is NaN when converted to a number.
+
+3. NEGATIVE_INFINITY is a special numeric value that is returned when an arithmetic operation or mathematical function generates a negative value greater than the largest representable number in JavaScript.
+
+4. Javascript developed by Netscape Communication Corporation.
+
+5. Undeclared variables are those that have not been declared in the current scope, while undefined variables are those that have been declared but not given a value.
+
+6.
+
+7. The basic difference between these two is that ViewState is to manage the state at the client's end, making state management easy for the end-user while SessionState manages the state at the server's end, making it easy to manage content from this end too.
+
+8. This ( === ) operator checks whether its two operands are equal, returning a Boolean result. 
+
+9. 
+
+10. The function fread() is used for reading the file content. The function fwrite() is used to write the content to the file.
+
+11. There are four types of looping structures in javascipt:1)for loop 2)while loop 3)Do while 4) foreach loop.
+
+12. We can convert a string to an integer by using the parseInt() conversion by default.
+
+13. The delete operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically.  
+
+14. JavaScript has three kinds of popup boxes: Alert box, Confirm box, and Prompt box.
+
+15. It is used to prevent any side effects caused while inserting an expression in a web page.
+
+16. In JavaScript, we can use a window. location object to force a page to load another page. We can use the location object to set the URL of a new page.
+
+17. Disadvantages of innerHTML
+	-Event handlers attached to any DOM element are preserved.
+	-Replacement is done everywhere.
+	-It is not possible to append innerHTML.
+	-Breaks the document.
+	-Used for Cross-site Scripting.
+
+18. 
