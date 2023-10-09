@@ -1,0 +1,215 @@
+*
+{
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navebar
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+ background: blue;
+ color: aliceblue;
+  font-size: 25px;
+  font-weight: bolder;
+  border: 1px solid black;
+  
+}
+
+li
+{
+    display: inline;
+    margin: 0 20px;
+    font-size: 12PX;
+    
+}
+
+li a 
+{
+    text-decoration: none;
+   color: aliceblue;
+}
+
+.bars
+{
+    display: none;
+    cursor: pointer;
+}
+.bars:hover ul
+{
+    display: block;
+}
+.btn
+{
+    border: 1px solid white;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.main .para1, .para2
+
+{
+    text-align: center;
+
+}
+.main
+{
+        background: blue;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 2px solid red;
+    padding: 110px ; 
+    position: relative  ;
+}
+.main .para1{
+    font-size: 40px;
+    /* margin-top: 50px; */
+
+
+}
+
+.main .para2{
+    font-size: 25px;
+    
+    margin-top: 10px;
+
+    
+}
+
+.main .subm 
+{
+    position: absolute;
+    border: 5px solid black ;
+    top: 90%;
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: transparent;
+   
+}
+
+.main .subm .top
+{
+    display: flex;
+    width: 250px;
+    gap: 10px;
+    
+}
+.main .subm .top .creat
+{
+    background: aliceblue;
+    cursor: pointer;
+}
+.main .subm .botum
+{
+    display: flex;
+    /* width: 100%; */
+    background: aliceblue;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+
+}
+.main .subm .botum button
+{
+    width: 200PX;
+    margin-top: 18px;
+    background: blue;
+    border: none;
+    border-radius: 3px;
+    height: 20px;
+}
+ 
+.new
+{
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.new .para3
+{
+    font-size: 40px;
+}
+.new .para4
+{
+
+    font-size: 20px;
+}
+.flexdiv
+{
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    text-align: left;
+
+}
+.flexdiv .child
+{
+    width: 33%;
+    /* border: 1px solid; */
+    
+}
+.flexdiv .child .img
+{
+    width: 100%;
+    height: 280px;
+    background: url(../img/035-1170x785.jpg);
+    background-size: cover
+}
+.flexdiv .child p
+{
+    font-size: 17px;
+     color: grey;
+     font-size: 18px ;
+     line-height: 22px;
+}
+.flexdiv .child .am
+{
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+.flexdiv .child .about
+{
+    padding: 10px;
+}
+.mainclass
+{
+    padding: 90px;
+}
+.flexbox *
+{
+    border: 1px solid black;
+    
+}
+.flex1
+{
+    display: flex;
+    gap: 20px;
+    margin-top: 30PX;
+}
+.flex1 .many
+{
+    width: 33%;
+}
+.flex1 .many .xmany
+{
+    height: 250px;
+    
+}
+.flex1  .xmanyx   
+{
+    height: 250px;
+    width: 33%;
+    border-radius: 10px;
+    
+}
+.flex1 .many .xy
+{
+    margin-top: 30PX;
+}

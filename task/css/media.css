@@ -1,0 +1,82 @@
+@media (max-width:500px) {
+    ul
+    {
+        display: none;
+        list-style: none;
+        width: 100%;
+    }
+    .class
+    {
+        display: block;
+    }
+    .bars
+    {
+        display: block;
+    }
+    li
+    {
+        display: block;
+        border: 1px solid black;
+     padding-left: 25px;
+        /* text-align: center; */
+
+    }
+    li a
+
+{
+    color: black;
+    line-height: 26px   ;
+}  
+
+.navebar
+    {
+        position: relative;
+    }
+    .menu
+    {
+        position: absolute;
+        top: 100%;
+        right:0;
+        background: aliceblue;
+            
+        z-index: 3;
+    }
+    .main .subm .botum
+    {
+        padding: 20px;
+    }
+    .main .subm .botum input
+    {
+        width: 100%;
+        height: 30px    ;
+    }
+    .main .subm 
+    {
+        width: 100%;
+        left: 0;
+    }
+    .main .subm .botum .creat1
+    {
+        width: 100%;
+        
+    }
+    .main .subm .botum .creat1 button
+    {
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .new     
+    {
+        margin-top: 250PX;
+    }
+    .flexdiv
+    {
+        flex-wrap: wrap;
+    }
+    .flexdiv .child
+    {
+        width: 100%;
+    }
+}
