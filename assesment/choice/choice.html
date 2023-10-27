@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+    <style>
+        *{
+            margin: 0%;
+            border: 2px solid black;
+            width: 200px;
+            margin: auto;
+        }
+        .date{
+            display: none;
+        }
+        .exit{
+            display: none;
+        }
+        .menu{
+            display: none;
+        }
+       li
+       {
+        margin: 20px 0;
+       }
+    </style>
+
+</head>
+<body>
+   <div class="main">
+    <h3>
+        
+<ul id="ul">
+        <li class="li" >User name <br> <input type="text" pattern="[a-zA-Z]"></li>
+        <li class="li">Mobile Number <br> <input type="text" pattern="[0-9]{10}"></li>
+        <li class="li">Email <br> <input type="email"></li>
+        <li class="li" >No of person <br> <input type="number" pattern="{2}"></li>
+
+        <li>
+            <div class="li">Choice of booking
+                <ul id="book" >
+                    <li><input type="radio" name="choice" onchange="Entry()">Full day booking</li>
+                    <li ><input type="radio" name="choice" onchange="Exit(),Time()" >Half day booking</li>
+                    <li><input type="radio" name="choice" onchange="Entry(),Exit()">Hourly booking</li>
+                </ul>
+            </div>
+        </li>
+        <li class="li date" >Date <br> <input type="datetime-local"> </li>
+       
+        <li class="li exit">Exit Time <br> 
+            <input type="datetime-local">
+            <ul class="menu" >
+                <li><input type="radio" name="choice">Break Fast</li>
+                <li><input type="radio" name="choice">Lunch</li>
+                <li><input type="radio" name="choice">Dinner</li>
+            </ul>
+         
+        </li>
+       
+           </ul>
+</h3>
+   </div>
+<script>
+ var entry =document.querySelector('.date');
+ var exit =document.querySelector('.exit');
+ var menu =document.querySelector('.menu');
+
+ Entry=()=>{
+    entry.style.display="block";
+ }
+ Exit=()=>{
+    exit.style.display="block";
+ }
+ Time=()=>{
+    menu.style.display="block";
+ }
+
+ console.log(exit);
+</script>
+</body>
+</html>
