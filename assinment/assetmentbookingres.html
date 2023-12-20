@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+</head>
+<body>
+            <h1>Restaurant Booking</h1>
+            <form>
+                <label>Choice of booking:</label>
+                <select id="bookingday" required>
+                    <option value="" disabled selected>Select Booking Type</option>
+                    <option value="FullDay">Full day booking</option>
+                    <option value="HalfDay">Half day booking</option>
+                    <option value="Hourly">Hourly booking</option>
+                </select><br><br>
+        
+                <label>User name:</label>
+                <input type="text" id="userName" required><br><br>
+        
+                <label>Mobile Number:</label>
+                <input type="tel" id="mobileNumber" required><br><br>
+        
+                <label>Email:</label>
+                <input type="email" id="email" required><br><br>
+        
+                <label>No of persons:</label>
+                <input type="number" id="Persons" required><br><br>
+        
+                <div id="dateSection">
+                    <label>Date:</label>
+                    <input type="date" id="date"><br><br>
+                </div>
+        
+                <div id="timeSection">
+                    <label>Time:</label>
+                    <input type="time" id="time"><br><br>
+                </div>
+        
+                <div id="slotSection">
+                    <label>Slot:</label>
+                    <select id="slot">
+                        <option value="breakfast">Breakfast</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                    </select><br><br>
+                </div>
+                <input type="submit" id="submit">
+                <input type="reset">
+            </form>
+        
+            <script>
+
+                //page loader
+
+                document.addEventListener("DOMContentLoaded", function() {
+                const bookingday = document.getElementById('bookingday');
+                const dateSection = document.getElementById('dateSection');
+                const timeSection = document.getElementById('timeSection');
+                const slotSection = document.getElementById('slotSection');
+                const usnm = document.getElementById('userName');
+                const person = document.getElementById('Persons');
+                const date = document.getElementById('date');
+                const time = document.getElementById('time');
+                const slot = document.getElementById('slot');
+                const submit = document.getElementById('submit')
+
+                bookingday.addEventListener('change', function() {
+
+                        const selectedOption = bookingday.value;
+
+                        //select booking type and show date, time and slot
+
+                        dateSection.style.display = 'none';
+                        timeSection.style.display = 'none';
+                        slotSection.style.display = 'none';
+
+                        if (selectedOption === 'FullDay') {
+                        dateSection.style.display = 'block';
+                        } else if (selectedOption === 'HalfDay') {
+                        dateSection.style.display = 'block';
+                        slotSection.style.display = 'block';
+                        } else if (selectedOption === 'Hourly') {
+                        dateSection.style.display = 'block';
+                        timeSection.style.display = 'block';
+                        }
+                });
+
+                //submit and show alert box full detail
+                submit.addEventListener('click',function(){
+                        alert(usnm.value + " : " + person.value + " Persons, " + bookingday.value + ", " + date.value + ", " + time.value + ", " + slot.value)
+                })
+   
+        });
+
+            </script>
+       
+        
+
+</body>
+</html>
