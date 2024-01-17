@@ -22,7 +22,7 @@ var currentScrollPos = window.pageYOffset;
     
     function submenu() 
     {
-    if(ul.style.display == "none" )
+    if(ul.style.display = "block")
     {
     ul.style.display = "block" ;
     

@@ -26,10 +26,22 @@
 
     .head{
          padding: 20px 20px;
+         position: relative;
         }
     .ul1{
-        display: none; 
+        display: block; 
+        position: absolute;
+        top: 100;
+        left: 0;
+        background: white;
+        width: 100%;
+        color: black;
         }
+    .ul1 li 
+    {
+        display: block;
+        
+    }
     .bars{
         display: block;
     }
