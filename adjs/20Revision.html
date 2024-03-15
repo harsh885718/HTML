@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Object Literal:
+        
+        const Student = {
+            fname:"Manit",
+            lname:"Shah",
+            fullName: function test(){
+                // alert("Object Literal..!")
+                // console.log(Student.fname)
+                return (this.fname +" "+ this.lname);
+            },
+
+            fullName1: function (){
+                // alert("Object Literal..!")
+                // console.log(Student.fname)
+                return (this.fname +" "+ this.lname);
+            },
+
+            fullName2:  () => {
+                // alert("Object Literal..!")
+                // console.log(Student.fname)
+                return (this.fname +" "+ this.lname);
+            }
+        }
+
+        // console.log(Student.fname)
+
+        console.log(Student.fullName());
+        console.log(Student.fullName1());
+        console.log(Student.fullName2());// undefined
+      
+
+
+
+    </script>
+    
+</body>
+</html>

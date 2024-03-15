@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+//       arr =[1,2,3,4]
+
+//       sum =0;
+//       for(let i=0;i<arr.length;i++)
+// {
+//     sum = sum + arr[i];//1+2
+// }
+// console.log(sum)
+
+function TestRestOp(...rest)
+{
+    console.log(rest)
+    let sum=0
+    for(let i=0;i<rest.length;i++)
+    {
+        sum = sum +rest[i]
+    }
+
+    console.log(sum)
+}
+TestRestOp(1,2)
+TestRestOp(1,2,3)
+TestRestOp(1,2,3,4)
+
+
+
+
+    </script>
+    
+</body>
+</html>

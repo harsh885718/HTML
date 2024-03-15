@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Firstname: <input type="text" id="inp1" />
+<br>
+    Lastname: <input type="text" id="inp2" />
+
+    <input type="submit" value="validate" onclick=" Validate()">
+
+    <script>
+      fname =   document.getElementById('inp1');
+
+      lname =   document.getElementById('inp2');
+
+      console.log(fname)
+      console.log(fname.value)
+        // alert("Required...!")
+
+       function Validate()
+       {  
+        if(fname.value=="")
+        {
+            alert("fname Required...!");
+            return 123;
+
+        }
+
+        if(lname.value=="")
+        {
+            alert("lanme Required...!")
+            return false;
+        }
+       }
+
+      
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body *{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="b1">Get text</button>
+    <button id="b2">Get JSON data</button>
+    <button id="b3">Get API data</button>
+
+    <form id="myForm">
+       <div>
+        <label>Title</label>
+        <input type="text" id="title">
+       </div>
+        <div>
+            <label>Body</label>
+        <input type="text" id="body">
+        </div>
+
+        <input type="submit">
+
+    </form>
+
+    <div id="res"></div>
+
+    <script>
+       const btn1 =  document.getElementById('b1')
+       const btn2 = document.getElementById('b2')
+       const btn3 = document.getElementById('b3')
+
+       const frm = document.getElementById('myForm')
+
+       btn1.addEventListener("click",GetText)
+       btn2.addEventListener("click",GetJSON)
+       btn3.addEventListener("click",GetAPI)
+
+       frm.addEventListener("submit",GetFormData)
+
+       function GetText()
+       {
+            fetch("fetch-data/demo.txt")
+            .then((res)=>{return res.text()})
+            .then((data)=>{
+                console.log(data)
+            })
+            .catch((err)=>{console.log(err.message)})
+       }
+
+       function GetJSON()
+       {
+        fetch("fetch-data/demo.json")
+            .then((res)=>{return res.json()})
+            .then((data)=>{
+                console.log(data)
+            })
+            .catch((err)=>{console.log(err.message)})
+        
+       }
+
+       function GetAPI()
+       {
+        fetch("https://jsonplaceholder.typicode.com/photos")
+        .then((res)=>{return res.json()})
+            .then((data)=>{
+                // console.log(data)
+
+                let header = "<h1> API DATA </h1><table><tr>"
+                data.map((v)=>{
+                    // console.log(v.name)
+
+                   header = header + `
+
+                  <td>Id</td>
+                  <td>title</td>
+                  <td>url</td>
+                  <td>thumbnailUrl</td>
+                  </tr>
+
+                  <tr>
+                    <td>${v.id}</td>
+                  <td>${v.title}</td>
+                  <td>
+                    <img src =${v.url} height="100">
+                    </td>
+                  <td>
+                    <img src=${v.thumbnailUrl}>
+                    </td>
+                    </tr>
+                   
+                    
+                    
+                   
+                   `
+
+                //    console.log(header)
+                  
+                })
+
+                
+                // console.log(header)
+                document.getElementById('res').innerHTML =header 
+            })
+
+
+            .catch((err)=>{console.log(err.message)})
+       }
+
+    //    https://jsonplaceholder.typicode.com/posts
+
+       function GetFormData(e)
+       {
+            e.preventDefault();
+            const t = document.getElementById("title").value
+           const b =  document.getElementById("body").value
+
+           data = {"title":t,"body":b};
+
+        //    console.log(t + " " + b)
+
+           fetch("https://jsonplaceholder.typicode.com/posts",{
+
+            method:"POST",
+            headers:{"content-type":"application/json"},
+            body:JSON.stringify(data)
+
+           })
+
+
+
+           .then((res)=>{return res.json()})
+            .then((data)=>{
+                console.log(data)
+            })
+            .catch((err)=>{console.log(err.message)})
+       }
+    </script>
+
+
+    
+</body>
+</html>

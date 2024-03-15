@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Construtor: it is a magic function which is called automatically when an object of a class is created -->
+
+    <script>
+        class Students 
+        {
+            // x=1;
+            // y=1;z=2;
+
+            // constructor()
+            // {
+            //     document.write("Constructor..!!!!<br>")
+            // }
+
+            // fun(x,y)
+            // {
+            //     document.write(x+y)
+            // }
+            // fun(1,2)
+
+            constructor(x,y)
+            {
+                document.write(x+y)
+            }
+
+            
+
+         a =function Fun1()
+            {
+                document.write("fun1 <br>");
+            }
+
+         b = function () 
+            {
+                document.write("fun ANONYMOUS <br>");
+            }
+
+          c=   ()=>{
+            document.write("fun ARROW <br>");
+            }
+
+            fun2()
+            {
+                document.write("fun2 <br>");
+            }
+
+            static StaticFun()
+            {
+                return ("fun STATIC <br>");
+            }
+
+        }
+
+        const obj1 = new Students(3,4);
+
+    //     document.write("x : " + obj1.x+"<br>");
+    //     document.write("y : " + obj1.y+"<br>");
+    //     document.write("z : " + obj1.z+"<br>");
+
+        //  obj1.a();
+    //     obj1.b();
+    //     obj1.c();
+    //     obj1.fun2();
+    //    document.write( Students.StaticFun())
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="h"></h1>
+    <button id="btn">Click</button>
+
+    <input type="text" id="inp">
+    <script>
+let btn_tag = document.getElementById('btn')
+        const inp_tag = document.getElementById('inp')
+
+        btn_tag.addEventListener("click",changeType)
+
+        // inp_tag.value ="kh"
+       function changeType()
+       {
+        inp_tag.setAttribute("type","submit")
+       }
+
+        var x= 1;
+        var h1_tag = document.getElementById('h');
+
+        
+
+        // btn_tag.addEventListener("click",xyz)
+
+        window.addEventListener("unload",xyz)
+
+        window.addEventListener("load",xyz)
+
+       function xyz()
+       {
+        h1_tag.innerHTML = x;
+       }
+    //    xyz()
+
+    </script>
+    
+</body>
+</html>

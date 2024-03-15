@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis assumenda earum unde quod temporibus facere laudantium ducimus impedit, maxime iure commodi nostrum officia! Optio vitae eos hic illum unde.
+    </p>
+
+    <button id="btn1">Hide</button>
+
+    <script>
+
+        btn_tag = document.getElementById('btn1');
+        p_tag = document.getElementById("para");
+
+        function hide(test){
+            p_tag.style.display ="none";
+            test()
+        }
+
+        btn_tag.addEventListener("click",hide(function(){alert("hi")}))
+
+// x =12 ;
+
+function TestClosure()
+{
+    let x=12
+document.write(x + "<br><br>")
+}
+TestClosure()
+// document.write(x + "<br><br>")
+
+
+ let i=11;// gloabal
+            if(1==1)
+            {
+                let i1=12;//local
+                document.write(i);//11
+            }
+
+            document.write(i);//11
+            document.write(i1)
+
+
+    </script>
+    
+</body>
+</html>

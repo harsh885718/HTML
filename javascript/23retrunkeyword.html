@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="funData"></h1>
+
+    <!-- funtion prints ==> call It 
+    funtion returns ==> print function -->
+    <script>
+        x=1;
+        function Test()
+        {
+            document.write(x)
+        }
+
+        Test()
+
+
+        y="hi";
+        function Test1()
+        {
+           return y;
+        }
+
+       document.write( Test1())
+
+       
+       console.log(Test1())
+       res = document.getElementById('funData')
+        res.innerHTML = Test1()
+    </script>
+    
+</body>
+</html>

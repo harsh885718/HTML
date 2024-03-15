@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Map-Filter-Redude: 
+    all are used to perform operations on array
+     map ==>
+     can perform opation and will return array(forEach cant return) 
+    filter ==>
+    can perform based on condition opation and will return array
+     reduce ==> can
+    perform opation and will return reduced array i.e if length of an array is 4
+    it may be reduced to 2 or 1 -->
+    <script>
+      // const radius = [1,2,3,4,5];
+
+      // const op = []
+      // op.push(13)
+
+      // console.log(op)
+
+      //document.write(Math.PI * radius * radius)
+
+      // for(var i=0;i<radius.length;i++)
+      // {
+      //    op.push(radius[i]*radius[i]*Math.PI)
+      // }
+
+      // console.log(op)
+
+      //     const radius = [1,2,3,4]
+
+      //   const area =   radius.forEach((v)=>{
+      //         return (v*v*Math.PI)
+      //     })
+
+      //     console.log(area);//undefined
+
+      const radius = [1, 2, 3, 4];
+
+      const area = radius.map((v) => {
+        return v * v * Math.PI;
+      });
+
+      console.log(area);
+    </script>
+  </body>
+</html>

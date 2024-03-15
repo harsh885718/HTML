@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xyz 
+        {
+            height: 100px;
+            width: 100px;
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="h1" >
+        Heading
+    </h1>
+
+    <h2 id="t">
+        Heading 2
+    </h2>
+
+    <script>
+        h1 = document.getElementById('h1');
+        h2 = document.getElementById('t');
+
+        // var.style.property = "value"
+        h1.style.color ="red";
+        h1.style.height ="100px";
+        h1.style.width ="100px";
+        h1.style.backgroundColor ="lightblue";
+        h1.style.fontSize = "34px"
+
+        // h1.classList.add("xyz")
+        // h1.classList.remove("xyz")
+        // h1.classList.toggle("xyz")
+
+        h2.className = "xyz"
+        h1.className =""
+
+
+        console.log(h1)
+
+        
+    </script>
+    
+</body>
+</html>

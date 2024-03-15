@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+         const Students = {
+            details:function(){
+               return (this.name + " " + this.age)
+            }
+        }
+
+
+        const student1 = {
+            name:"Drashti",
+            age:20,          
+        }
+
+        const student2 = {
+            name:"Meet",
+            age:23           
+        }
+
+
+        const student3 = {
+            name:"Manit",
+            age:22
+        }
+
+       console.log( Students.details.call(student1))
+        Students.details.apply(student2)
+
+       const st3=  Students.details.bind(student3)
+        st3()
+
+        console.log(st3())
+   </script>
+    
+</body>
+</html>

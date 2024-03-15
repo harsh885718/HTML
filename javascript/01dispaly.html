@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Javscript: 
+    ==> Client-side scripting language 
+    ==> used to change behaviour of a webpage/to make dynamic changes in a website
+    ==> DOM (Document Object Model)
+        => getElementById
+        => getElementsByClassName
+        => getElementsByName
+        => getElementsByTagName
+        => CreateElement
+        => CreateTextNode 
+        => write 
+        => querySelector
+        => querySelectorAll
+    ==> Object-oriented 
+    ==> Types: 
+    1. Internal JS 
+    2. External Js -->
+
+    <h1 style="text-align: center;">Display Data in Javascript</h1>
+
+    <h2 id="test"></h2>
+
+    <script>
+
+        //Display in BODY/Document/Window
+
+
+           document.write(" Hello Javascript 765 *&^&* <b>BOLD</b>");
+        //    document.getElementById('test').innerHTML = "<u>U.P Ram </u>"
+
+
+        // to display in CONSOLE
+
+        console.log("Hello Javascript 765 *&^&* <b>BOLD</b>")
+
+        // to display in ANY TAG
+
+        /*
+
+        document.getElementById('test');
+        document.getElementById('test').innerHTML = "Hello Javascript 765 *&^&* <u>BOLD</u>";
+
+        */
+
+        window.document.getElementById('test').innerText = "Hello Javascript 765 *&^&* <u>utsav</u>";
+        
+        
+        console.log(document.getElementById('test'))
+
+    </script>
+    
+</body>
+</html>

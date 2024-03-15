@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        class TestFun 
+        {
+             t =9;
+            TestRestOp(...rest)
+            {
+
+                const arr = [1,2,23]
+                const [a,...rest1] = arr;
+                console.log(...rest1)
+                console.log(rest1)
+                let sum=0
+                for(let i=0;i<rest.length;i++)
+                {
+                    sum = sum +rest[i]
+                }
+
+                console.log(sum)
+            }
+        }
+
+        const obj = new TestFun;
+
+
+        obj.TestRestOp(1,2)
+        obj.TestRestOp(1,2,3,4)
+        console.log(obj.t)
+        
+
+
+
+    </script>
+    
+</body>
+</html>

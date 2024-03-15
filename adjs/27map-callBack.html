@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        const radius = [1,2,3,4]
+
+        const logic = (r1)=>
+        {
+            return (Math.PI *r1 *r1)
+        }
+
+        const  Area=(r,l)=>
+        {
+            console.log(r)
+
+            for(i=0;i<r.length;i++)
+            {
+                console.log(l(r[i]))
+            }
+
+
+            
+
+        }
+        Area(radius,logic)
+    </script>
+    
+</body>
+</html>

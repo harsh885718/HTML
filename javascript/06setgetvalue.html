@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a,img,input 
+        {
+            display: block;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="h_data">Heading</h1>
+    <p id="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit totam voluptate eveniet, mollitia natus esse minus recusandae libero tempore incidunt vel, qui fuga sequi quos corrupti id culpa! Facilis, incidunt!
+    </p>
+    <a href="h.html" id="a1">Link</a>
+
+    <input type="text" value="Ram" id="inp1">
+
+    <img id="img1" src="https://media.architecturaldigest.com/photos/63079fc7b4858efb76814bd2/16:9/w_4000,h_2250,c_limit/9.%20DeLorean-Alpha-5%20%5BDeLorean%5D.jpg" alt="no-image" height="200px" >
+
+    
+    
+    <script>
+        x=3;
+        var xyz     =  document.getElementById('h_data');
+        var p_tag   =  document.getElementById('para');
+        var a_tag   =  document.getElementById('a1');
+        var inp_tag =  document.getElementById('inp1');
+        var img_tag =  document.getElementById('img1');
+
+        
+        a_tag.innerHTML = inp_tag.value ;
+
+        a_tag.href = p_tag.innerHTML
+
+        alert( a_tag.innerHTML)
+
+        console.log( inp_tag.value);///Input
+
+        // xyz.innerHTML = "Manit";
+        // p_tag.innerText ="Para";
+        // a_tag.innerHTML="HYPERLINK";
+        // inp_tag.value ="Meet";
+
+        // img_tag.alt ="hello";
+        // img_tag.src="https://www.sixt.com/magazine/wp-content/uploads//sites/6/2022/04/Bugatti-Bolide-Hypercar-resize-1024x683.jpg"
+        // xyz.style.color ="red";
+
+
+    </script>
+    
+</body>
+</html>   

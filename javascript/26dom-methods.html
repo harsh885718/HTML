@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 
+        {
+            cursor: crosshair;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="i1">Hello</h1>
+
+    <h2 class="i2">hello H2 CLASS</h2>
+    <h2 id="i2">hello H2 ID</h2>
+
+    <h3>Hi</h3>
+    <h3>Hi</h3>
+    <h3>Hi</h3>
+    <h3>Hi</h3>
+
+    <h4 class="h">h4 </h4>
+    <h4 class="h">h4 </h4>
+    <h4 class="h">h4 </h4>
+
+    <h4 id="h">h4 </h4>
+    <h4 id="h">h4 </h4>
+    <h4 id="h">h4 </h4>
+    <h4 id="h">h4 </h4>
+    <h4 id="h">h4 </h4>
+    <h4 id="h">h4 </h4>
+
+    <p name="para">Para 1</p>
+    <p name="para">Para 1</p>
+    <p name="para">Para 1</p>
+    <p name="para">Para 1</p>
+    <p name="para">Para 1</p>
+
+    <script>
+        var a= document.getElementById('i1');
+        console.log(a);
+        document.write(a);
+
+        var b = document.querySelector('.i2');
+        console.log(b)
+
+        var c = document.querySelector('#i2')
+        console.log(c)
+
+        var d = document.getElementsByTagName("h3")
+        console.log(d)
+
+        e = document.querySelectorAll('.h')
+        console.log(e)
+
+        f = document.querySelectorAll('#h');
+        console.log(f)
+
+        g = document.getElementsByClassName('h')
+        console.log(g)
+
+        h = document.getElementsByName('para')
+        console.log(h)
+
+
+
+
+
+    </script>
+
+</body>
+</html>

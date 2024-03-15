@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h1>Heading 1</h1>
+    <h1>Heading 1</h1>
+    <h1>Heading 1</h1>
+
+    <script>
+            h1_arr = document.getElementsByTagName('h1');
+            console.log(h1_arr);
+
+            // h1_arr[0].style.color ="red"
+            // h1_arr[1].style.color ="red"
+            // h1_arr[2].style.color ="red"
+            // h1_arr[3].style.color ="red"
+
+            // for(index in h1_arr)
+            // {
+            //     h1_arr[index].style.color ="blue"
+            // }
+            for(x of h1_arr)
+            {
+                // document.write(x)
+                x.style.color ="pink"
+            }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input 
+        {
+             border: none; 
+             outline: 2px solid gray; 
+        } */
+
+        input:focus 
+        {
+            /* box-shadow:  0 0 34px #000; */
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+   <form action="">
+    Firstname:
+    <!-- <input type="text" id="inp1"  required pattern="[a-zA-Z]+" title="Letters only"> -->
+
+    <!-- <input type="text" id="inp1"  required pattern="[a-zA-Z]{2,5}" title="min 2 and max 5 Letters only"> -->
+
+    <input type="text" id="inp1" onblur="Validate(inp1,nmErr)">
+    <span id="nmErr"></span>
+
+    <br>
+
+    Lastname:
+    <input type="text" id="inp2" onblur=" Validate(inp2,nmErr1)">
+    <span id="nmErr1"></span>
+
+    <!-- <input type="submit" > -->
+   </form>
+
+
+    
+
+
+    <script>
+    //    i1 =  document.getElementById('inp1');
+    //    sp1 = document.getElementById('nmErr');
+
+    //    i2=  document.getElementById('inp2');
+    //    sp2 = document.getElementById('nmErr1');
+
+
+    //    function T(x)
+    //    {
+    //     document.write(x+"<br>")
+    //    }
+    //    T(12)
+    //    T(12.234)
+    //    T("sdf")
+    //    T(12)
+       
+
+    //    function Validate()
+    //    {
+    //     if(i1.value == "")
+    //     {
+    //         // document.write("Required..!")
+    //         sp1.innerHTML ="*Required"
+    //         sp1.style.color ="red"
+    //     }
+
+    //     if(i2.value == "")
+    //     {
+    //         // document.write("Required..!")
+    //         sp2.innerHTML ="*Required"
+    //         sp2.style.color ="red"
+    //     }
+        
+       
+    //    }
+
+        function Validate(x,y)
+        {
+            if(x.value == "")
+            {
+                y.innerHTML ="*Required"
+                y.style.color ="red"
+                x.style.border = "3px solid red"
+            }
+            else 
+            {
+                y.innerHTML =""
+                x.style.border = "3px solid green"
+            }
+        }
+
+    </script>
+
+
+    
+</body>
+</html>

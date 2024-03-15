@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="res"></h1>
+    <p id="res1"></p>
+
+    <script>
+      "use strict";
+      
+
+      const str = `hello 
+        
+        <u>..!</u>
+
+        <table style="color:red">
+
+            <tr>
+                <td>col 1</td>
+                <td>col 2</td>
+                <td>col 3</td>
+            </tr>
+
+            <tr>
+                <td>col 1</td>
+                <td>col 2</td>
+                <td>col 3</td>
+            </tr>
+
+            <tr>
+                <td>col 1</td>
+                <td>col 2</td>
+                <td>col 3</td>
+            </tr>
+        </table>
+        
+        SVGFEColorMatrixElements
+        falses
+        FileSystemDirectoryEntryfsd
+        false`;
+      console.log(str);
+
+      document.getElementById("res").innerHTML = str;
+    
+      const testTemplate = "hi";
+     
+
+      document.getElementById('res1').innerHTML = `<h1><u>${testTemplate}</u></h1>`;
+    
+    
+    
+    </script>
+  </body>
+</html>

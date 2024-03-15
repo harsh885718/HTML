@@ -1,0 +1,38 @@
+04var-let-const.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var x = 3; // Declaration
+        var x = 23; // Re-declaration ALLOWED
+        x="VAR"; // Re-assignment ALLOWED
+        document.write(x);//VAR
+        document.write("<br>")
+
+
+        let y = 3; // Declaration
+       // let y = 23; // Re-declaration NOT ALLOWED
+        y="LET"; // Re-assignment ALLOWED
+        document.write(y);//LET
+        document.write("<br>")
+
+
+        const z = "Const"; // Declaration
+        //const z = 23; // Re-declaration NOT ALLOWED
+       // z=4.5; // Re-assignment NOT ALLOWED
+        document.write(z)
+        document.write("<br>")
+       
+
+    </script>
+
+
+</body>
+</html>

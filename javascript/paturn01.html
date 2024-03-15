@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Confirmation Example</title>
+    <style>
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="registrationForm">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <br>
+        
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" required>
+        <br>
+
+        <p class="error-message" id="errorMessage"></p>
+
+        <button type="button" onclick="validatePasswords()">Submit</button>
+    </form>
+
+    <script>
+        function validatePasswords() {
+
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password === confirmPassword) 
+            {
+                document.getElementById('errorMessage').innerHTML = '';
+                alert('Passwords match! Form submitted.');
+            } 
+            else
+            {
+                document.getElementById('errorMessage').innerHTML = 'Passwords do not match.';
+            }
+        }
+    </script>
+
+</body>
+</html>
