@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC webpage</title>
+    <style>
+        table{
+            width: 80%;
+        }
+        tr, th, td{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="nameid" placeholder="Enter Name">
+    <input type="text" id="ageid" placeholder="Enter age">
+    <select name="Gender" id="Gender">
+        <option value="" hidden>Select Gender</option>
+        <option value="male">male</option>
+        <option value="female">female</option>
+    </select>
+    <input type="text" id="birthid" placeholder="Enter Birth">
+    <select name="Meal" id="Meal">
+        <option value="" hidden>Meal</option>
+        <option value="Meal">veg</option>
+        <option value="Meal">non-veg</option>
+    </select>
+    <button onclick="submitdata()">Submit</button>
+    <table border="">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Birth Preference</th>
+                <th>Meal</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"> <!-- Ensure you have a tbody element with id="tbody" -->
+        </tbody>
+    </table>
+    
+   
+
+    <script>
+        function submitdata() {
+            var namedata = document.getElementById("nameid").value;
+            var agedata = document.getElementById("ageid").value;
+            var genderdata = document.getElementById("Gender").value;
+            var birthdata = document.getElementById("birthid").value;
+            var mealdata = document.getElementById("Meal").value;
+    
+            var tbodydata = document.getElementById("tbody");
+            var trdata = document.createElement("tr");
+    
+            var nameTd = document.createElement("td");
+            nameTd.textContent = namedata;
+            trdata.appendChild(nameTd);
+    
+            var ageTd = document.createElement("td");
+            ageTd.textContent = agedata;
+            trdata.appendChild(ageTd);
+    
+            var genderTd = document.createElement("td");
+            genderTd.textContent = genderdata;
+            trdata.appendChild(genderTd);
+    
+            var birthTd = document.createElement("td");
+            birthTd.textContent = birthdata;
+            trdata.appendChild(birthTd);
+    
+            var mealTd = document.createElement("td");
+            mealTd.textContent = mealdata;
+            trdata.appendChild(mealTd);
+    
+            tbodydata.appendChild(trdata);
+        }
+    </script>
+    
+</body>
+</html>
